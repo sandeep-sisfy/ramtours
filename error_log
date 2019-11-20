@@ -1,0 +1,23 @@
+[03-Jul-2019 17:07:38 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 17:07:38 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 17:07:38 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 17:07:38 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 17:07:47 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 17:07:47 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 17:07:47 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 17:07:47 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 17:11:14 Etc/GMT] PHP Warning:  proc_open(): fork failed - Cannot allocate memory in phar:///opt/cpanel/composer/bin/composer/vendor/symfony/console/Application.php on line 959

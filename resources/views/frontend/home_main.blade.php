@@ -1,0 +1,11 @@
+@include('frontend.front_part.head')
+@include('frontend.front_part.topnav')
+@include('frontend.front_part.nav')
+@if(empty($home_blade))
+	@include('frontend.front_part.small_slider')
+@else
+	@include('frontend.front_part.slider-search')
+@endif
+@include('frontend.front_part.container')
+@include('frontend.front_part.footer')
+@include('frontend.front_part.foot')

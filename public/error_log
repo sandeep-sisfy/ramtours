@@ -1,0 +1,646 @@
+[01-May-2019 04:55:18 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\AirlineController::__construct() in /home/indianwa/public_html/ramnew/app/Http/Controllers/AirlineController.php on line 27
+[01-May-2019 04:56:10 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\FlightController::__construct() in /home/indianwa/public_html/ramnew/app/Http/Controllers/FlightController.php on line 30
+[12-Jun-2019 10:52:16 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 594
+[12-Jun-2019 10:52:19 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 594
+[12-Jun-2019 10:52:27 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 594
+[12-Jun-2019 10:52:32 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 594
+[12-Jun-2019 10:58:04 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 594
+[12-Jun-2019 10:58:07 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 594
+[12-Jun-2019 10:58:14 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 594
+[12-Jun-2019 10:58:15 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 594
+[12-Jun-2019 11:17:10 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 601
+[12-Jun-2019 11:17:20 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 601
+[12-Jun-2019 11:20:58 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 601
+[12-Jun-2019 11:21:01 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 601
+[12-Jun-2019 11:21:02 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 601
+[12-Jun-2019 11:22:42 Etc/GMT] PHP Parse error:  syntax error, unexpected '')}}/flt-location.png">יעד ' (T_CONSTANT_ENCAPSED_STRING) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 606
+[12-Jun-2019 11:22:44 Etc/GMT] PHP Parse error:  syntax error, unexpected '')}}/flt-location.png">יעד ' (T_CONSTANT_ENCAPSED_STRING) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 606
+[12-Jun-2019 11:46:44 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 606
+[12-Jun-2019 11:59:43 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 606
+[12-Jun-2019 12:00:34 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 606
+[12-Jun-2019 12:01:44 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 606
+[12-Jun-2019 12:01:47 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 606
+[12-Jun-2019 12:02:22 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 606
+[12-Jun-2019 12:02:24 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 606
+[12-Jun-2019 12:06:02 Etc/GMT] PHP Parse error:  syntax error, unexpected '')}}/flt-location.png">יעד ' (T_CONSTANT_ENCAPSED_STRING) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 613
+[12-Jun-2019 12:10:37 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 609
+[12-Jun-2019 12:11:54 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 609
+[12-Jun-2019 12:11:56 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 609
+[12-Jun-2019 12:15:13 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 609
+[12-Jun-2019 12:15:43 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 609
+[12-Jun-2019 12:20:15 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 609
+[12-Jun-2019 12:20:57 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 609
+[12-Jun-2019 12:20:59 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 609
+[12-Jun-2019 12:26:45 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 609
+[12-Jun-2019 12:26:45 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 609
+[12-Jun-2019 12:26:46 Etc/GMT] PHP Parse error:  syntax error, unexpected '=' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 609
+[27-Jun-2019 07:43:52 Etc/GMT] PHP Parse error:  syntax error, unexpected 'int' (T_STRING) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1180
+[27-Jun-2019 07:43:53 Etc/GMT] PHP Parse error:  syntax error, unexpected 'int' (T_STRING) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1180
+[27-Jun-2019 07:43:53 Etc/GMT] PHP Parse error:  syntax error, unexpected 'int' (T_STRING) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1180
+[27-Jun-2019 07:44:23 Etc/GMT] PHP Parse error:  syntax error, unexpected 'int' (T_STRING) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1180
+[27-Jun-2019 07:44:47 Etc/GMT] PHP Parse error:  syntax error, unexpected 'int' (T_STRING) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1180
+[27-Jun-2019 07:45:42 Etc/GMT] PHP Parse error:  syntax error, unexpected 'int' (T_STRING) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1180
+[27-Jun-2019 07:45:49 Etc/GMT] PHP Parse error:  syntax error, unexpected 'int' (T_STRING) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1180
+[27-Jun-2019 07:45:52 Etc/GMT] PHP Parse error:  syntax error, unexpected 'int' (T_STRING) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1180
+[27-Jun-2019 07:45:55 Etc/GMT] PHP Parse error:  syntax error, unexpected 'int' (T_STRING) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1180
+[27-Jun-2019 07:45:56 Etc/GMT] PHP Parse error:  syntax error, unexpected 'int' (T_STRING) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1180
+[27-Jun-2019 07:46:05 Etc/GMT] PHP Parse error:  syntax error, unexpected 'int' (T_STRING) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1180
+[27-Jun-2019 07:46:07 Etc/GMT] PHP Parse error:  syntax error, unexpected 'int' (T_STRING) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1180
+[27-Jun-2019 07:46:16 Etc/GMT] PHP Parse error:  syntax error, unexpected 'int' (T_STRING) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1180
+[27-Jun-2019 07:46:18 Etc/GMT] PHP Parse error:  syntax error, unexpected 'int' (T_STRING) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1180
+[27-Jun-2019 08:15:41 Etc/GMT] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1219
+[27-Jun-2019 08:15:43 Etc/GMT] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1219
+[27-Jun-2019 12:07:26 Etc/GMT] PHP Warning:  require(/home/indianwa/public_html/ramnew/public../../vendor/autoload.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/public/index.php on line 24
+[27-Jun-2019 12:07:26 Etc/GMT] PHP Warning:  require(/home/indianwa/public_html/ramnew/public../../vendor/autoload.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/public/index.php on line 24
+[27-Jun-2019 12:07:26 Etc/GMT] PHP Fatal error:  require(): Failed opening required '/home/indianwa/public_html/ramnew/public../../vendor/autoload.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/public/index.php on line 24
+[03-Jul-2019 10:30:16 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:30:16 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:30:16 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:30:16 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 10:30:28 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:30:28 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:30:28 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:30:28 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 10:31:58 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:31:58 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:31:58 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:31:58 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 10:33:53 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:33:53 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:33:53 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:33:53 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 10:33:58 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:33:58 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:33:58 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:33:58 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 10:34:12 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:12 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:12 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:12 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 10:34:13 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:13 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:13 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:13 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 10:34:13 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:13 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:13 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:13 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 10:34:14 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:14 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:14 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:14 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 10:34:14 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:14 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:14 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:14 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 10:34:15 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:15 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:15 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:15 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 10:34:16 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:16 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:16 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:16 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 10:34:16 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:16 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:16 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:16 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 10:34:17 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:17 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:17 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:17 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 10:34:18 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:18 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:18 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:18 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 10:34:18 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:18 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:18 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:18 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 10:34:19 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:19 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:19 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:19 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 10:34:23 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:23 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:23 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:23 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 10:34:24 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:24 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:24 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:24 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 10:34:46 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:46 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:46 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:34:46 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 10:36:50 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:36:50 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:36:50 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:36:50 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 10:37:45 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:37:45 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:37:45 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:37:45 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 10:37:45 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:37:45 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:37:45 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:37:45 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 10:37:52 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:37:52 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:37:52 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:37:52 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 10:37:56 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:37:56 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:37:56 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:37:56 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 10:37:59 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:37:59 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:37:59 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:37:59 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 10:38:04 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:38:04 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:38:04 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:38:04 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 10:38:12 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:38:12 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:38:12 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:38:12 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 10:38:14 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:38:14 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:38:14 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:38:14 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 10:38:22 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:38:22 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:38:22 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 10:38:22 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 17:06:59 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 17:06:59 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 17:06:59 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 17:06:59 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 17:07:57 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 17:07:57 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 17:07:57 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 17:07:57 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 17:08:00 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 17:08:00 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 17:08:00 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 17:08:00 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[03-Jul-2019 17:09:12 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 17:09:12 Etc/GMT] PHP Warning:  include(/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php): failed to open stream: No such file or directory in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 17:09:12 Etc/GMT] PHP Warning:  include(): Failed opening '/home/indianwa/public_html/ramnew/vendor/composer/../vlucas/phpdotenv/src/Environment/DotenvFactory.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/indianwa/public_html/ramnew/vendor/composer/ClassLoader.php on line 444
+[03-Jul-2019 17:09:12 Etc/GMT] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php:790
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('config')
+#1 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('config')
+#2 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('config', Array)
+#4 /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php(1225): Illuminate\Foundation\Application->make('config')
+#5 /home/indianwa/public_html/ramnew/vendor/laravel/framework in /home/indianwa/public_html/ramnew/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 790
+[11-Jul-2019 09:33:15 Etc/GMT] PHP Parse error:  syntax error, unexpected ''se' (T_ENCAPSED_AND_WHITESPACE) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 180
+[11-Jul-2019 09:33:15 Etc/GMT] PHP Parse error:  syntax error, unexpected ''se' (T_ENCAPSED_AND_WHITESPACE) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 180
+[11-Jul-2019 09:49:17 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 09:49:19 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 09:49:25 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 09:49:40 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 09:50:25 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 09:51:16 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 09:51:53 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 09:52:03 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 09:53:37 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 09:53:47 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 09:53:48 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 09:53:51 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 09:54:44 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 09:54:46 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 09:54:48 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 09:55:33 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 09:55:35 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 09:55:49 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 09:55:50 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 09:56:24 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 09:57:38 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 09:58:02 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 09:58:05 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 09:58:09 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 09:58:12 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 09:58:37 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:00:15 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:00:30 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:01:08 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:02:18 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:02:20 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:03:56 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:04:34 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:06:04 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:07:03 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:11:29 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:11:42 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:16:33 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:16:35 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:16:36 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:16:48 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:16:49 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:16:51 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:16:51 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:16:54 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:16:55 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:16:56 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:16:57 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:16:58 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:16:59 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:17:01 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:17:03 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:17:04 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:17:11 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:17:13 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:17:54 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:17:56 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 240
+[11-Jul-2019 10:18:18 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 293
+[11-Jul-2019 10:18:20 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 342
+[11-Jul-2019 10:18:26 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 342
+[26-Jul-2019 12:27:26 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1433
+[26-Jul-2019 12:27:28 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1433
+[26-Jul-2019 12:27:28 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1433
+[26-Jul-2019 12:27:33 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1433
+[26-Jul-2019 12:27:38 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1433
+[29-Jul-2019 11:59:12 Asia/Kolkata] PHP Fatal error:  Cannot use App\model\homepage_setting as homepage_setting because the name is already in use in /home/indianwa/public_html/ramnew/app/Http/Controllers/front/HomeController.php on line 18
+[29-Jul-2019 11:25:12 Etc/GMT] PHP Parse error:  syntax error, unexpected '.' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1040
+[29-Jul-2019 11:25:14 Etc/GMT] PHP Parse error:  syntax error, unexpected '.' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1040
+[29-Jul-2019 11:25:24 Etc/GMT] PHP Parse error:  syntax error, unexpected '.' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1040
+[12-Aug-2019 06:15:32 Etc/GMT] PHP Parse error:  syntax error, unexpected '<' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1610
+[12-Aug-2019 06:15:34 Etc/GMT] PHP Parse error:  syntax error, unexpected '<' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1610
+[12-Aug-2019 06:19:20 Etc/GMT] PHP Parse error:  syntax error, unexpected '<' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1610
+[12-Aug-2019 06:19:21 Etc/GMT] PHP Parse error:  syntax error, unexpected '<' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1610
+[12-Aug-2019 06:21:04 Etc/GMT] PHP Parse error:  syntax error, unexpected '<' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1610
+[12-Aug-2019 06:21:06 Etc/GMT] PHP Parse error:  syntax error, unexpected '<' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1610
+[12-Aug-2019 06:21:11 Etc/GMT] PHP Parse error:  syntax error, unexpected '<' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1610
+[12-Aug-2019 06:21:14 Etc/GMT] PHP Parse error:  syntax error, unexpected '<' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1610
+[12-Aug-2019 06:21:15 Etc/GMT] PHP Parse error:  syntax error, unexpected '<' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1610
+[12-Aug-2019 06:23:00 Etc/GMT] PHP Parse error:  syntax error, unexpected '<' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1610
+[12-Aug-2019 06:24:35 Etc/GMT] PHP Parse error:  syntax error, unexpected '<' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1610
+[12-Aug-2019 06:28:41 Etc/GMT] PHP Parse error:  syntax error, unexpected '<' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1610
+[12-Aug-2019 07:41:45 Etc/GMT] PHP Parse error:  syntax error, unexpected ')' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1609
+[12-Aug-2019 07:41:48 Etc/GMT] PHP Parse error:  syntax error, unexpected ')' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1609
+[12-Aug-2019 07:41:49 Etc/GMT] PHP Parse error:  syntax error, unexpected ')' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1609
+[12-Aug-2019 07:41:49 Etc/GMT] PHP Parse error:  syntax error, unexpected ')' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1609
+[12-Aug-2019 07:41:49 Etc/GMT] PHP Parse error:  syntax error, unexpected ')' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1609
+[12-Aug-2019 07:41:50 Etc/GMT] PHP Parse error:  syntax error, unexpected ')' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1609
+[12-Aug-2019 07:41:50 Etc/GMT] PHP Parse error:  syntax error, unexpected ')' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1609
+[12-Aug-2019 07:41:51 Etc/GMT] PHP Parse error:  syntax error, unexpected ')' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1609
+[12-Aug-2019 07:41:51 Etc/GMT] PHP Parse error:  syntax error, unexpected ')' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1609
+[12-Aug-2019 07:41:51 Etc/GMT] PHP Parse error:  syntax error, unexpected ')' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1609
+[12-Aug-2019 07:41:57 Etc/GMT] PHP Parse error:  syntax error, unexpected ')' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1609
+[12-Aug-2019 07:41:57 Etc/GMT] PHP Parse error:  syntax error, unexpected ')' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1609
+[12-Aug-2019 07:42:06 Etc/GMT] PHP Parse error:  syntax error, unexpected ')' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1609
+[12-Aug-2019 07:42:08 Etc/GMT] PHP Parse error:  syntax error, unexpected ')' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1609
+[12-Aug-2019 07:42:15 Etc/GMT] PHP Parse error:  syntax error, unexpected ')' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1609
+[12-Aug-2019 07:42:16 Etc/GMT] PHP Parse error:  syntax error, unexpected ')' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1609
+[13-Aug-2019 06:36:11 Etc/GMT] PHP Parse error:  syntax error, unexpected end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 480
+[13-Aug-2019 06:37:07 Etc/GMT] PHP Parse error:  syntax error, unexpected '}' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 474
+[21-Aug-2019 10:26:02 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to undefined function flight_array_comparision_price() in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php:1701
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/composer/autoload_real.php(66): require()
+#1 /home/indianwa/public_html/ramnew/vendor/composer/autoload_real.php(56): composerRequirede9f394a6a9b496347121e2ab64b30cf('f0b61a25f882b32...', '/home/indianwa/...')
+#2 /home/indianwa/public_html/ramnew/vendor/autoload.php(7): ComposerAutoloaderInitde9f394a6a9b496347121e2ab64b30cf::getLoader()
+#3 /home/indianwa/public_html/ramnew/public/index.php(24): require('/home/indianwa/...')
+#4 {main}
+  thrown in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1701
+[21-Aug-2019 10:26:06 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to undefined function flight_array_comparision_price() in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php:1701
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/composer/autoload_real.php(66): require()
+#1 /home/indianwa/public_html/ramnew/vendor/composer/autoload_real.php(56): composerRequirede9f394a6a9b496347121e2ab64b30cf('f0b61a25f882b32...', '/home/indianwa/...')
+#2 /home/indianwa/public_html/ramnew/vendor/autoload.php(7): ComposerAutoloaderInitde9f394a6a9b496347121e2ab64b30cf::getLoader()
+#3 /home/indianwa/public_html/ramnew/public/index.php(24): require('/home/indianwa/...')
+#4 {main}
+  thrown in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1701
+[21-Aug-2019 10:26:09 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to undefined function flight_array_comparision_price() in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php:1701
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/composer/autoload_real.php(66): require()
+#1 /home/indianwa/public_html/ramnew/vendor/composer/autoload_real.php(56): composerRequirede9f394a6a9b496347121e2ab64b30cf('f0b61a25f882b32...', '/home/indianwa/...')
+#2 /home/indianwa/public_html/ramnew/vendor/autoload.php(7): ComposerAutoloaderInitde9f394a6a9b496347121e2ab64b30cf::getLoader()
+#3 /home/indianwa/public_html/ramnew/public/index.php(24): require('/home/indianwa/...')
+#4 {main}
+  thrown in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1701
+[21-Aug-2019 10:26:12 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to undefined function flight_array_comparision_price() in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php:1701
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/composer/autoload_real.php(66): require()
+#1 /home/indianwa/public_html/ramnew/vendor/composer/autoload_real.php(56): composerRequirede9f394a6a9b496347121e2ab64b30cf('f0b61a25f882b32...', '/home/indianwa/...')
+#2 /home/indianwa/public_html/ramnew/vendor/autoload.php(7): ComposerAutoloaderInitde9f394a6a9b496347121e2ab64b30cf::getLoader()
+#3 /home/indianwa/public_html/ramnew/public/index.php(24): require('/home/indianwa/...')
+#4 {main}
+  thrown in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1701
+[21-Aug-2019 10:26:15 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to undefined function flight_array_comparision_price() in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php:1701
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/composer/autoload_real.php(66): require()
+#1 /home/indianwa/public_html/ramnew/vendor/composer/autoload_real.php(56): composerRequirede9f394a6a9b496347121e2ab64b30cf('f0b61a25f882b32...', '/home/indianwa/...')
+#2 /home/indianwa/public_html/ramnew/vendor/autoload.php(7): ComposerAutoloaderInitde9f394a6a9b496347121e2ab64b30cf::getLoader()
+#3 /home/indianwa/public_html/ramnew/public/index.php(24): require('/home/indianwa/...')
+#4 {main}
+  thrown in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1701
+[21-Aug-2019 10:26:17 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to undefined function flight_array_comparision_price() in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php:1701
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/composer/autoload_real.php(66): require()
+#1 /home/indianwa/public_html/ramnew/vendor/composer/autoload_real.php(56): composerRequirede9f394a6a9b496347121e2ab64b30cf('f0b61a25f882b32...', '/home/indianwa/...')
+#2 /home/indianwa/public_html/ramnew/vendor/autoload.php(7): ComposerAutoloaderInitde9f394a6a9b496347121e2ab64b30cf::getLoader()
+#3 /home/indianwa/public_html/ramnew/public/index.php(24): require('/home/indianwa/...')
+#4 {main}
+  thrown in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1701
+[21-Aug-2019 10:26:20 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to undefined function flight_array_comparision_price() in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php:1701
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/composer/autoload_real.php(66): require()
+#1 /home/indianwa/public_html/ramnew/vendor/composer/autoload_real.php(56): composerRequirede9f394a6a9b496347121e2ab64b30cf('f0b61a25f882b32...', '/home/indianwa/...')
+#2 /home/indianwa/public_html/ramnew/vendor/autoload.php(7): ComposerAutoloaderInitde9f394a6a9b496347121e2ab64b30cf::getLoader()
+#3 /home/indianwa/public_html/ramnew/public/index.php(24): require('/home/indianwa/...')
+#4 {main}
+  thrown in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1701
+[21-Aug-2019 10:26:35 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to undefined function flight_array_comparision_price() in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php:1701
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/composer/autoload_real.php(66): require()
+#1 /home/indianwa/public_html/ramnew/vendor/composer/autoload_real.php(56): composerRequirede9f394a6a9b496347121e2ab64b30cf('f0b61a25f882b32...', '/home/indianwa/...')
+#2 /home/indianwa/public_html/ramnew/vendor/autoload.php(7): ComposerAutoloaderInitde9f394a6a9b496347121e2ab64b30cf::getLoader()
+#3 /home/indianwa/public_html/ramnew/public/index.php(24): require('/home/indianwa/...')
+#4 {main}
+  thrown in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1701
+[21-Aug-2019 10:26:40 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to undefined function flight_array_comparision_price() in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php:1701
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/composer/autoload_real.php(66): require()
+#1 /home/indianwa/public_html/ramnew/vendor/composer/autoload_real.php(56): composerRequirede9f394a6a9b496347121e2ab64b30cf('f0b61a25f882b32...', '/home/indianwa/...')
+#2 /home/indianwa/public_html/ramnew/vendor/autoload.php(7): ComposerAutoloaderInitde9f394a6a9b496347121e2ab64b30cf::getLoader()
+#3 /home/indianwa/public_html/ramnew/public/index.php(24): require('/home/indianwa/...')
+#4 {main}
+  thrown in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1701
+[21-Aug-2019 10:26:41 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to undefined function flight_array_comparision_price() in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php:1701
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/composer/autoload_real.php(66): require()
+#1 /home/indianwa/public_html/ramnew/vendor/composer/autoload_real.php(56): composerRequirede9f394a6a9b496347121e2ab64b30cf('f0b61a25f882b32...', '/home/indianwa/...')
+#2 /home/indianwa/public_html/ramnew/vendor/autoload.php(7): ComposerAutoloaderInitde9f394a6a9b496347121e2ab64b30cf::getLoader()
+#3 /home/indianwa/public_html/ramnew/public/index.php(24): require('/home/indianwa/...')
+#4 {main}
+  thrown in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1701
+[21-Aug-2019 10:26:44 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to undefined function flight_array_comparision_price() in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php:1701
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/composer/autoload_real.php(66): require()
+#1 /home/indianwa/public_html/ramnew/vendor/composer/autoload_real.php(56): composerRequirede9f394a6a9b496347121e2ab64b30cf('f0b61a25f882b32...', '/home/indianwa/...')
+#2 /home/indianwa/public_html/ramnew/vendor/autoload.php(7): ComposerAutoloaderInitde9f394a6a9b496347121e2ab64b30cf::getLoader()
+#3 /home/indianwa/public_html/ramnew/public/index.php(24): require('/home/indianwa/...')
+#4 {main}
+  thrown in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1701
+[21-Aug-2019 10:26:46 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to undefined function flight_array_comparision_price() in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php:1701
+Stack trace:
+#0 /home/indianwa/public_html/ramnew/vendor/composer/autoload_real.php(66): require()
+#1 /home/indianwa/public_html/ramnew/vendor/composer/autoload_real.php(56): composerRequirede9f394a6a9b496347121e2ab64b30cf('f0b61a25f882b32...', '/home/indianwa/...')
+#2 /home/indianwa/public_html/ramnew/vendor/autoload.php(7): ComposerAutoloaderInitde9f394a6a9b496347121e2ab64b30cf::getLoader()
+#3 /home/indianwa/public_html/ramnew/public/index.php(24): require('/home/indianwa/...')
+#4 {main}
+  thrown in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1701
+[04-Oct-2019 14:38:23 Asia/Kolkata] PHP Fatal error:  Cannot redeclare App\Http\Controllers\admin\PageController::edit() in /home/indianwa/public_html/ramnew/app/Http/Controllers/admin/PageController.php on line 169
+[05-Oct-2019 13:04:00 Asia/Kolkata] PHP Fatal error:  Cannot redeclare App\Http\Controllers\admin\LocationController::save_location_meta_data() in /home/indianwa/public_html/ramnew/app/Http/Controllers/admin/LocationController.php on line 277
+[07-Oct-2019 10:09:04 Etc/GMT] PHP Parse error:  syntax error, unexpected '/' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 622
+[07-Oct-2019 10:09:04 Etc/GMT] PHP Parse error:  syntax error, unexpected '/' in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 622
+[07-Oct-2019 10:14:00 Etc/GMT] PHP Parse error:  syntax error, unexpected '$html' (T_VARIABLE) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 704
+[07-Oct-2019 10:14:00 Etc/GMT] PHP Parse error:  syntax error, unexpected '$html' (T_VARIABLE) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 704
+[09-Oct-2019 07:19:28 Etc/GMT] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1854
+[09-Oct-2019 07:19:35 Etc/GMT] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1854
+[09-Oct-2019 07:32:35 Etc/GMT] PHP Parse error:  syntax error, unexpected '') }}" class="dropdown-item">�' (T_CONSTANT_ENCAPSED_STRING) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1837
+[09-Oct-2019 07:48:07 Etc/GMT] PHP Parse error:  syntax error, unexpected 'additional_pages' (T_STRING) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1842
+[09-Oct-2019 07:48:10 Etc/GMT] PHP Parse error:  syntax error, unexpected 'additional_pages' (T_STRING) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1842
+[09-Oct-2019 07:48:18 Etc/GMT] PHP Parse error:  syntax error, unexpected 'additional_pages' (T_STRING) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1842
+[09-Oct-2019 07:48:21 Etc/GMT] PHP Parse error:  syntax error, unexpected 'additional_pages' (T_STRING) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1842
+[09-Oct-2019 07:48:22 Etc/GMT] PHP Parse error:  syntax error, unexpected 'additional_pages' (T_STRING) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1842
+[09-Oct-2019 07:48:22 Etc/GMT] PHP Parse error:  syntax error, unexpected 'additional_pages' (T_STRING) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1842
+[09-Oct-2019 07:48:23 Etc/GMT] PHP Parse error:  syntax error, unexpected 'additional_pages' (T_STRING) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1842
+[09-Oct-2019 07:48:30 Etc/GMT] PHP Parse error:  syntax error, unexpected 'additional_pages' (T_STRING) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1842
+[09-Oct-2019 07:49:09 Etc/GMT] PHP Parse error:  syntax error, unexpected 'additional_pages' (T_STRING) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1842
+[09-Oct-2019 07:49:19 Etc/GMT] PHP Parse error:  syntax error, unexpected 'additional_pages' (T_STRING) in /home/indianwa/public_html/ramnew/app/helper/rami_helper.php on line 1842
+[15-Oct-2019 11:58:21 Asia/Kolkata] PHP Fatal error:  Cannot use App\model\page as page because the name is already in use in /home/indianwa/public_html/ramnew/app/Http/Controllers/automation/AutomationController.php on line 17

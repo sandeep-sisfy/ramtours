@@ -1,0 +1,9 @@
+@include('mobile.mobile_part.head')
+@include('mobile.mobile_part.nav')
+@include('mobile.mobile_part.slider')
+@if(!empty($search))
+	@include('mobile.mobile_part.home_search')
+@endif
+@include('mobile.mobile_part.container')
+@include('mobile.mobile_part.footer')
+@include('mobile.mobile_part.footer_js')

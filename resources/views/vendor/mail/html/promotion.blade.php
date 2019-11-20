@@ -3,15 +3,15 @@
         <td align="right">
             {{ Illuminate\Mail\Markdown::parse($slot) }}
             <strong>'שם המשלם  : '</strong>{{$payee_name}}<br>
-            <strong>'שדוא"ל המשלם   : '</strong>{{$email}}<br>
+            <strong>'דוא"ל המשלם   : '</strong>{{$email}}<br>
             @if(!empty($start_date))
-            <strong>'שתאריך התחלה   : '</strong>{{$start_date}}<br>
+            <strong>'תאריך התחלה   : '</strong>{{$start_date}}<br>
             @endif
             @if(!empty($end_date))
-            <strong>'שתאריך סיום : '</strong>{{$end_date}}<br>
+            <strong>'תאריך סיום : '</strong>{{$end_date}}<br>
             @endif
-            <strong>'שרכיבי החבילה   : '</strong>{{$pakage_components}}<br>
-            <strong>'שעמים  : '</strong>{{$total_peoples}}<br>
+            <strong>'רכיבי החבילה   : '</strong>{{$pakage_components}}<br>
+            <strong>'כמות  : '</strong>{{$total_peoples}}<br>
             <strong>'מבוגרים  : '</strong>{{$adults}}<br>
             <strong>'ילדים   : '</strong>{{$childs}}<br>
             <strong>'מזהה עסקה  1  : '</strong>{{$tran1}}<br>

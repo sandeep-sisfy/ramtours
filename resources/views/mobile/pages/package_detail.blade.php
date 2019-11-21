@@ -125,7 +125,7 @@
                         שעות {{$flight['time_taken']}}
                         <span class="rt_plane"><i class="fa fa-plane" aria-hidden="true"></i></span>
                      </div>
-                     <div class="flight-text-box tf2">xxx{{ $flight['desti']}} <span
+                     <div class="flight-text-box tf2">{{ $flight['desti']}} <span
                            class="rt_tmm">{{$flight['arrival_time']}}</span><span class="rt_dts">
                            {{$flight['arrival_full_date']}}
                         </span>
@@ -143,7 +143,7 @@
                         <span class="rt_dts">{{$all_flight['up_depart_full_date']}}</span>
                      </div>
                      <div class="flight-take-off ftbord">
-                        שעות {{$all_flight['up_time_taken']}}
+                        ססשעות {{$all_flight['up_time_taken']}}
                         <span class="rt_plane"><i class="fa fa-plane" aria-hidden="true"></i></span>
                      </div>
                      <div class="flight-text-box tf2">{{ $all_flight['up_desti']}} <span

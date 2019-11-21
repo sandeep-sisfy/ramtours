@@ -8,7 +8,7 @@
     <strong>::</strong> <a href="{{ url('/') }}">דף הבית </a>
     <img src="{{url('/assets/front/images')}}/bread-crum-arrow.png" alt=""><!-- 
     מינכן <img src="{{url('/assets/front/images')}}/bread-crum-arrow.png" alt=""> -->
-    <strong>טמידע ודילים מומלצים ליער השחור  </strong>
+    <strong>מידע ודילים מומלצים ליער השחור</strong>
     </div>
     </div>
   </section> 

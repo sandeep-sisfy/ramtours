@@ -20,14 +20,16 @@
                         <li class=""><a class="dropdown-item" href="{{ url('/package-category/21') }}">חבילות נופש
                               באיזור היער השחור גרמניה </a></li>
                         <!-- <li class=""><a href="{{ url('/package-category/53') }}" class="dropdown-item">חבילות ליער השחור ראש השנה סוכות</a></li> -->
+                        <li class=""><a href="{{ url('/package-category/82') }}" class="dropdown-item">חבילות וכפרי נופש
+                              ברחבי הולנד</a></li>
                         <li class=""><a href="{{ url('/package-category/55') }}" class="dropdown-item">חבילות הנופש
                               באיזור זלצבורג אוסטריה </a></li>
                         <!-- <li class=""><a href="{{ url('/package-category/55') }}" class="dropdown-item">חבילות נופש ליער השחור פסח</a></li>
                                  <li class=""><a href="{{ url('/package-category/45') }}" class="dropdown-item">כל חבילות הנופש באיזור זלצבורג אוסטריה</a></li> -->
-                        <li class=""><a href="{{ url('/package-category/82') }}" class="dropdown-item">חבילות נופש
-                              להולנד</a></li>
                         <li class=""><a href="{{ url('/package-category/54') }}" class="dropdown-item">חבילות נופש
-                              לאוסטריה טירול</a></li>
+                              באיזור טירול אוסטריה</a></li>
+
+
                      </ul>
                   </li>
                   {{-- fly and travel menu --}}

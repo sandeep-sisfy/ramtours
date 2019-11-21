@@ -14,10 +14,10 @@
                      <a href="#"  class="nav-link {{ get_rami_active_menu('vacation-packages') }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">חבילות נופש</a> 
                      <ul class="dropdown-menu" role="menu">
                         <li class=""><a href="{{ url('/package-category/21') }}" class="dropdown-item">חבילות נופש באיזור היער השחור גרמניה</a></li>
-                         {{-- <li class=""><a href="{{ url('/package-category/44') }}" class="dropdown-item">חבילות ליער השחור ראש השנה סוכות  </a></li> --}}
-                         <li class=""><a href="{{ url('/package-category/55') }}" class="dropdown-item">כחבילות הנופש באיזור זלצבורג אוסטריה  </a></li>
+                         {{-- <li class=""><a href="{{ url('/package-category/44') }}" class="dropdown-item">חבילות ליער השחור ראש השנה סוכות</a></li> --}}
+                         <li class=""><a href="{{ url('/package-category/55') }}" class="dropdown-item">חבילות נופש באיזור זלצבורג אוסטריה</a></li>
                          <!-- <li class=""><a href="{{ url('/package-category/53') }}" class="dropdown-item">חבילות נופש לאוסטריה בסוכות</a></li> -->
-                         <li class=""><a href="{{ url('/package-category/82') }}" class="dropdown-item">חבילות נופש להולנד  </a></li>
+                         <li class=""><a href="{{ url('/package-category/82') }}" class="dropdown-item">חבילות נופש להולנד</a></li>
                          <li class=""><a href="{{ url('/package-category/54') }}" class="dropdown-item">חבילות נופש לאוסטריה טירול</a></li>
                      </ul>
                   </li>

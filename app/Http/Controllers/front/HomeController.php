@@ -747,12 +747,13 @@ class HomeController extends Controller
             'last_name' => 'required',
             'phone' => 'required',
             'email' => 'required|email',
-            'interested_in' => 'required',
+            // 'interested_in' => 'required',
         ], $messages);
         $user['first_name'] = $request->first_name;
         $user['last_name'] = $request->last_name;
         $user['phone'] = $request->phone;
         $user['email'] = $request->email;
+        $user['msg'] = $request->msg_contact;
         $user['interested_in'] = $request->interested_in;
         Mail::to(get_rami_setting('notification_email_id'))->send(new ContactUs($user));
         //return (new ContactUs($user))->render();

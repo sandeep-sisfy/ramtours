@@ -48,6 +48,9 @@
                         placeholder="*דוא״ל">
                      {!! get_form_error_msg($errors, 'email') !!}
                   </div>
+                  <div class="contact-input-box">
+                     <textarea rows="4" class="form-control" name="msg_contact"></textarea>
+                  </div>
                   <div class="clear"></div>
                   <div class="contactselection">
                      <select name="interested_in" class="form-control wpcf7-select">
@@ -92,7 +95,7 @@
          <div class="urgent-call">
             <div class="urgent-call-icon"><img src="{{url('assets/mobile')}}/images/email-icon.jpg" alt=""></div>
             <div class="contact-content-box">
-               ליצירת קשר מהיר מלאו הטופס מטה או פנו ישירות במייל:<br>
+               ליצירת קשר מהיר מלאו הטופס למעלה או פנו ישירות במייל:<br>
                <div class="contact-number"><a href="mailto:contact@ramtours.com">contact@ramtours.com</a></div>
             </div>
          </div>

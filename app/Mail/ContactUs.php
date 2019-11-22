@@ -5,7 +5,6 @@ namespace App\Mail;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
-use Illuminate\Contracts\Queue\ShouldQueue;
 
 class ContactUs extends Mailable
 {
@@ -19,7 +18,7 @@ class ContactUs extends Mailable
      */
     public function __construct($user)
     {
-        $this->user=$user;
+        $this->user = $user;
     }
 
     /**
@@ -29,6 +28,6 @@ class ContactUs extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.contact.contact_us', $this->user)->subject('Ramtours:customer Query');
+        return $this->markdown('emails.contact.contact_us', $this->user)->subject(' לקוח חדש ,פניית צור קשר מהאתר');
     }
 }

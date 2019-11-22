@@ -4,8 +4,8 @@
             <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
                 <tr>
                     <td class="panel-item">
-                         יקירי, <br>
-                         מהמלצות משתמש אחר:
+                        שלום, <br>
+                        התקבלה המלצה ממבקר באתר:
                         {{ Illuminate\Mail\Markdown::parse($slot) }}
                     </td>
                 </tr>

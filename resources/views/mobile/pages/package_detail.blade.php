@@ -185,7 +185,7 @@
                   <div class="flight-secc bottom">
                      <div class="flights-icon"><img width="262" height="165"
                            src="{{url('ramtours/'.$all_flight['down_airline_logo'])}}" class="img-fluid" alt=""> </div>
-                     <div class="flight-text-box td1">{{$all_flight['down_source']}} <span
+                     <div class="flight-text-box td1">{{$all_flight['up_desti']}} <span
                            class="rt_tmm">{{$all_flight['down_departure_time']}}</span><span
                            class="rt_dts">{{$all_flight['down_depart_full_date']}}</span>
                      </div>
@@ -193,7 +193,7 @@
                         שעות {{$all_flight['down_time_taken']}}
                         <span class="rt_plane"><i class="fa fa-plane" aria-hidden="true"></i></span>
                      </div>
-                     <div class="flight-text-box td2">{{$all_flight['down_desti']}} <span class="rt_tmm">
+                     <div class="flight-text-box td2">{{$all_flight['down_source']}} <span class="rt_tmm">
                            {{$all_flight['down_arrival_time']}} </span><span class="rt_dts">
                            {{$all_flight['down_arrival_full_date']}}
                         </span>

@@ -551,6 +551,7 @@ class HomeController extends Controller
                 $fligts_data[$count]['down_desti'] = get_location_name($flight_schedule->flight_name_down->flight_desti);
                 $fligts_data[$count]['down_source'] = get_location_name($flight_schedule->flight_name_down->flight_source);
                 $fligts_data[$count]['down_flight_no'] = $flight_schedule->flight_name_down->flight_number;
+
             }
             $fligts_data[$count]['up_flights'] = $up_flights;
             $fligts_data[$count]['down_flights'] = $down_flights;

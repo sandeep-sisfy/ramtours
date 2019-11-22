@@ -619,6 +619,95 @@
                       <div class="flight-places"></div>
                       <div class="flight-duration">משך טיסה כולל {{$all_flight['down_time_taken']}}</div>
                     </div>
+
+
+
+                    <!-- 
+
+                      array:1 [▼
+  2 => array:22 [▼
+    "up_airline_name" => "Lufthansa"
+    "up_airline_logo" => "airline/39_airline_15615359147.jpeg"
+    "up_depart_full_date" => "יום ראשון ,08 ,אפריל ,2020"
+    "up_departure_time" => "08:00"
+    "up_arrival_time" => "11:30"
+    "up_departure_time_in_month_date" => "08 ,אפריל"
+    "up_arrival_time_in_month_date" => "08 ,אפריל"
+    "up_desti" => "פרנקפורט"
+    "up_source" => "תל-אביב"
+    "up_flight_no" => "695"
+    "up_time_taken" => "3:29"
+    "down_airline_name" => "Lufthansa"
+    "down_airline_logo" => "airline/39_airline_15615359147.jpeg"
+    "down_depart_full_date" => "יום ראשון ,14 ,אפריל ,2020"
+    "down_departure_time" => "22:55"
+    "down_departure_time_in_month_date" => "14 ,אפריל"
+    "down_arrival_time_in_month_date" => "15 ,אפריל"
+    "down_arrival_time" => "03:35"
+    "down_time_taken" => "4:39"
+    "down_desti" => "מינכן"
+    "down_source" => "תל-אביב"
+    "down_flight_no" => "681"
+  ]
+]
+
+                    up_airline_name ==>
+                    string(9) "Lufthansa"
+                                          up_airline_logo ==>
+                    string(35) "airline/39_airline_15615359147.jpeg"
+                                          up_depart_full_date ==>
+                    string(39) "יום ראשון ,08 ,אפריל ,2020"
+                                          up_departure_time ==>
+                    string(5) "08:00"
+                                          up_arrival_time ==>
+                    string(5) "11:30"
+                                          up_departure_time_in_month_date ==>
+                    string(14) "08 ,אפריל"
+                                          up_arrival_time_in_month_date ==>
+                    string(14) "08 ,אפריל"
+                                          up_desti ==>
+                    string(16) "פרנקפורט"
+                                          up_source ==>
+                    string(13) "תל-אביב"
+                                          up_flight_no ==>
+                    string(3) "695"
+                                          up_time_taken ==>
+                    string(4) "3:29"
+                                          down_airline_name ==>
+                    string(9) "Lufthansa"
+                                          down_airline_logo ==>
+                    string(35) "airline/39_airline_15615359147.jpeg"
+                                          down_depart_full_date ==>
+                    string(39) "יום ראשון ,14 ,אפריל ,2020"
+                                          down_departure_time ==>
+                    string(5) "22:55"
+                                          down_departure_time_in_month_date ==>
+                    string(14) "14 ,אפריל"
+                                          down_arrival_time_in_month_date ==>
+                    string(14) "15 ,אפריל"
+                                          down_arrival_time ==>
+                    string(5) "03:35"
+                                          down_time_taken ==>
+                    string(4) "4:39"
+                                          down_desti ==>
+                    string(10) "מינכן"
+                                          down_source ==>
+                    string(13) "תל-אביב"
+                                          down_flight_no ==>
+                    string(3) "681"
+                                          up_flights ==>
+                    array(0) {
+}
+                                          down_flights ==>
+                    array(0) {
+}
+                                          id ==>
+                    int(131)
+                                          title ==>
+                    string(73) "טיסת לופטהנזה 695 מישראל לפרנקפורט 08/04-14/04"
+                     -->
+
+
                     @if(empty($all_flight['down_flights']))
                     <div class="flight-secc bottom">
                       <div class="flights-icon">
@@ -628,7 +717,7 @@
                                    $all_flight['down_airline_name'] }} </span></div>
                       </div>
                       <div class="flight-text-box tf1">
-                        {{$all_flight['up_source']}}
+                        {{$all_flight['down_source']}}
                         <span class="rt_tmm">{{$all_flight['down_departure_time']}}
                         </span>{{$all_flight['down_departure_time_in_month_date']}}
                       </div>

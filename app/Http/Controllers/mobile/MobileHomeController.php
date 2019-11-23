@@ -34,7 +34,7 @@ class MobileHomeController extends Controller
         $data['header_custom_code'] = get_rami_setting('homepage_header_custom_code');
         $data['footer_custom_code'] = get_rami_setting('homepage_footer_custom_code');
         $data['search'] = 1;
-        $data['packages'] = package::where([['package_type', 1], ['package_status', 1], ['is_hot_deal', 1], ['package_start_date', '>=', date('Y-m-d')]])->orderBy('package_start_date', 'ASC')->orderBy('package_lowest_price', 'asc')->skip(0)->take(4)->get();
+        $data['packages'] = package::where([['package_type', 1], ['package_status', 1], ['is_hot_deal', 1], ['package_start_date', '>=', date('Y-m-d')]])->orderBy('package_start_date', 'ASC')->orderBy('package_lowest_price', 'asc')->skip(0)->take(40)->get();
         $total_element = package::where([['package_type', 1], ['package_status', 1], ['is_hot_deal', 1], ['package_start_date', '>=', date('Y-m-d')]])->orderBy('package_start_date', 'ASC')->orderBy('package_lowest_price', 'asc')->get()->count();
         if ($total_element > $data['packages']->count()) {
             $data['show_load_more'] = 1;
@@ -575,10 +575,10 @@ class MobileHomeController extends Controller
         }if (!empty($request->pack_infant)) {
             session()->put('pack_infants', $request->pack_infant);
         }
-        $data['all_pkgs_fhc'] = package::where($where)->orderBy('package_start_date', 'ASC')->orderBy('package_lowest_price', 'asc')->skip(0)->take(9)->get();
+        $data['all_pkgs_fhc'] = package::where($where)->orderBy('package_start_date', 'ASC')->orderBy('package_lowest_price', 'asc')->skip(0)->take(90)->get();
         $total_element = package::where($where)->count();
         if (!empty($all_loc)) {
-            $data['all_pkgs_fhc'] = package::where($where)->whereIn('package_flight_location', $all_loc)->orderBy('package_start_date', 'ASC')->orderBy('package_lowest_price', 'asc')->skip(0)->take(9)->get();
+            $data['all_pkgs_fhc'] = package::where($where)->whereIn('package_flight_location', $all_loc)->orderBy('package_start_date', 'ASC')->orderBy('package_lowest_price', 'asc')->skip(0)->take(90)->get();
             $total_element = package::where($where)->whereIn('package_flight_location', $all_loc)->count();
         }
         if ($total_element > 9) {
@@ -605,7 +605,7 @@ class MobileHomeController extends Controller
         }
         $all_loc = get_location_all_child_location($loc_id);
         $all_loc[] = $loc_id;
-        $data['all_pkgs_fhc'] = package::where([['package_type', 1], ['package_status', 1], ['package_start_date', '>=', date('Y-m-d')]])->whereIn('package_flight_location', $all_loc)->orderBy('package_lowest_price', 'asc')->orderBy('package_start_date', 'ASC')->skip(0)->take(9)->get();
+        $data['all_pkgs_fhc'] = package::where([['package_type', 1], ['package_status', 1], ['package_start_date', '>=', date('Y-m-d')]])->whereIn('package_flight_location', $all_loc)->orderBy('package_lowest_price', 'asc')->orderBy('package_start_date', 'ASC')->skip(0)->take(90)->get();
         $total_element = package::where([['package_flight_location', $loc_id], ['package_type', 1], ['package_status', 1], ['package_start_date', '>=', date('Y-m-d')]])->count();
         if ($total_element > 9) {
             $data['show_load_more'] = 1;
@@ -622,7 +622,7 @@ class MobileHomeController extends Controller
         $all_loc[] = $loc_id;
         $data['loc_id'] = $loc_id;
         $data['loc_name'] = $location->loc_name;
-        $data['all_hotels'] = hotel::whereIn('hotel_location', $all_loc)->skip(0)->take(9)->orderBy('hotel_code', 'asc')->get();
+        $data['all_hotels'] = hotel::whereIn('hotel_location', $all_loc)->skip(0)->take(90)->orderBy('hotel_code', 'asc')->get();
         $total_element = hotel::whereIn('hotel_location', $all_loc)->count();
         if ($total_element > $data['all_hotels']->count()) {
             $data['show_load_more'] = 1;
@@ -642,10 +642,10 @@ class MobileHomeController extends Controller
             $data['loc_name'] = get_location_name($request->accom_location);
         }
         if (!empty($all_loc)) {
-            $data['all_hotels'] = hotel::whereIn('hotel_location', $all_loc)->skip(0)->take(9)->orderBy('hotel_code', 'asc')->orderBy('hotel_code', 'asc')->get();
+            $data['all_hotels'] = hotel::whereIn('hotel_location', $all_loc)->skip(0)->take(90)->orderBy('hotel_code', 'asc')->orderBy('hotel_code', 'asc')->get();
             $total_element = hotel::whereIn('hotel_location', $all_loc)->count();
         } else {
-            $data['all_hotels'] = hotel::skip(0)->take(9)->orderBy('hotel_code', 'asc')->orderBy('hotel_code', 'asc')->get();
+            $data['all_hotels'] = hotel::skip(0)->take(90)->orderBy('hotel_code', 'asc')->orderBy('hotel_code', 'asc')->get();
             $total_element = hotel::count();
         }
 
@@ -736,7 +736,7 @@ class MobileHomeController extends Controller
     }
     public function testimonials()
     {
-        $data['testimonials'] = testimonial::where('status', 1)->orderBy('testimonial_date', 'DESC')->skip(0)->take(4)->get();
+        $data['testimonials'] = testimonial::where('status', 1)->orderBy('testimonial_date', 'DESC')->skip(0)->take(40)->get();
         return view('mobile.pages.testimonials', $data);
     }
     public function submit_testimonial(Request $request)
@@ -790,7 +790,7 @@ class MobileHomeController extends Controller
     }
     public function search_accommodation_hotel_code(Request $request)
     {
-        $data['all_hotels'] = hotel::where([['hotel_code', 'like', '%' . $request->hotel_code . '%']])->skip(0)->take(8)->orderBy('hotel_code', 'asc')->orderBy('hotel_code', 'asc')->get();
+        $data['all_hotels'] = hotel::where([['hotel_code', 'like', '%' . $request->hotel_code . '%']])->skip(0)->take(80)->orderBy('hotel_code', 'asc')->orderBy('hotel_code', 'asc')->get();
         $total_element = hotel::where([['hotel_code', 'like', '%' . $request->hotel_code . '%']])->count();
         if ($total_element > $data['all_hotels']->count()) {
             $data['show_load_more'] = 1;

@@ -82,7 +82,7 @@ class HomeController extends Controller
     }
     public function testimonial()
     {
-        $data['testimonials'] = testimonial::where('status', 1)->orderBy('testimonial_date', 'DESC')->skip(0)->take(4)->get();
+        $data['testimonials'] = testimonial::where('status', 1)->orderBy('testimonial_date', 'DESC')->skip(0)->take(40)->get();
         return view('frontend.pages.testimonials', $data);
     }
     public function submit_testimonial(Request $request)
@@ -627,10 +627,10 @@ class HomeController extends Controller
         }if (!empty($request->pack_infant)) {
             session()->put('pack_infants', $request->pack_infant);
         }
-        $data['all_pkgs_fhc'] = package::where($where)->orderBy('package_start_date', 'ASC')->orderBy('package_lowest_price', 'asc')->skip(0)->take(8)->get();
+        $data['all_pkgs_fhc'] = package::where($where)->orderBy('package_start_date', 'ASC')->orderBy('package_lowest_price', 'asc')->skip(0)->take(80)->get();
         $total_element = package::where($where)->count();
         if (!empty($all_loc)) {
-            $data['all_pkgs_fhc'] = package::where($where)->whereIn('package_flight_location', $all_loc)->orderBy('package_start_date', 'ASC')->orderBy('package_lowest_price', 'ASC')->skip(0)->take(8)->get();
+            $data['all_pkgs_fhc'] = package::where($where)->whereIn('package_flight_location', $all_loc)->orderBy('package_start_date', 'ASC')->orderBy('package_lowest_price', 'ASC')->skip(0)->take(80)->get();
             $total_element = package::where($where)->whereIn('package_flight_location', $all_loc)->count();
         }
         if ($total_element > 8) {
@@ -680,7 +680,7 @@ class HomeController extends Controller
             $count++;
         }
         if (empty($show_setting)) {
-            $show_setting[$count]['results'] = package::where([['package_type', 1], ['package_status', 1], ['package_start_date', '>=', date('Y-m-d')]])->whereIn('package_flight_location', $all_loc)->orderBy('package_lowest_price', 'asc')->orderBy('package_start_date', 'ASC')->skip(0)->take(8)->get();
+            $show_setting[$count]['results'] = package::where([['package_type', 1], ['package_status', 1], ['package_start_date', '>=', date('Y-m-d')]])->whereIn('package_flight_location', $all_loc)->orderBy('package_lowest_price', 'asc')->orderBy('package_start_date', 'ASC')->skip(0)->take(80)->get();
             $total_element = package::where([['package_type', 1], ['package_status', 1], ['package_start_date', '>=', date('Y-m-d')]])->whereIn('package_flight_location', $all_loc)->count();
             if ($total_element > 8) {
                 $data['show_load_more'] = 1;
@@ -778,7 +778,7 @@ class HomeController extends Controller
         //dd($all_loc);
         $data['loc_id'] = $loc_id;
         $data['loc_name'] = $location->loc_name;
-        $data['all_hotels'] = hotel::whereIn('hotel_location', $all_loc)->skip(0)->take(8)->orderBy('hotel_code', 'asc')->get();
+        $data['all_hotels'] = hotel::whereIn('hotel_location', $all_loc)->skip(0)->take(80)->orderBy('hotel_code', 'asc')->get();
         $total_element = hotel::whereIn('hotel_location', $all_loc)->count();
         //dd($total_element);
         if ($total_element > $data['all_hotels']->count()) {
@@ -788,7 +788,7 @@ class HomeController extends Controller
     }
     public function search_accommodation_hotel_code(Request $request)
     {
-        $data['all_hotels'] = hotel::where([['hotel_code', 'like', '%' . $request->hotel_code . '%']])->skip(0)->take(8)->orderBy('hotel_code', 'asc')->orderBy('hotel_code', 'asc')->get();
+        $data['all_hotels'] = hotel::where([['hotel_code', 'like', '%' . $request->hotel_code . '%']])->skip(0)->take(80)->orderBy('hotel_code', 'asc')->orderBy('hotel_code', 'asc')->get();
         $total_element = hotel::where([['hotel_code', 'like', '%' . $request->hotel_code . '%']])->count();
         if ($total_element > $data['all_hotels']->count()) {
             $data['show_load_more'] = 1;
@@ -809,10 +809,10 @@ class HomeController extends Controller
             $data['loc_name'] = get_location_name($request->accom_location);
         }
         if (!empty($all_loc)) {
-            $data['all_hotels'] = hotel::whereIn('hotel_location', $all_loc)->skip(0)->take(8)->orderBy('hotel_code', 'asc')->orderBy('hotel_code', 'asc')->get();
+            $data['all_hotels'] = hotel::whereIn('hotel_location', $all_loc)->skip(0)->take(80)->orderBy('hotel_code', 'asc')->orderBy('hotel_code', 'asc')->get();
             $total_element = hotel::whereIn('hotel_location', $all_loc)->count();
         } else {
-            $data['all_hotels'] = hotel::skip(0)->take(8)->orderBy('hotel_code', 'asc')->orderBy('hotel_code', 'asc')->get();
+            $data['all_hotels'] = hotel::skip(0)->take(80)->orderBy('hotel_code', 'asc')->orderBy('hotel_code', 'asc')->get();
             $total_element = hotel::count();
         }
 

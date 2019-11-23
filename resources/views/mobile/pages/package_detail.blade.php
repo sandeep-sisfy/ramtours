@@ -263,6 +263,33 @@
                @endforeach
             </ul>
          </div>
+
+         @php
+         $iix = 0;
+         $hotel_gallery_count = sizeof($hotel_gallery)
+         @endphp
+
+
+         <div class="pkg-section" id="gallery">
+            <h3 class="pkg_head">גלריה :</h3>
+            <div class="col-sm-5 ap-cont">
+               <div class="col-sm-12 gallery">
+                  @foreach($hotel_gallery as $img)
+                  <div class="pics">
+                     @if ($iix < 15) <a data-fancybox="gallery" href="{{url('ramtours/'.$img->image)}}">
+                        <img class="img-fluid" src="{{url('ramtours/'.$img->image)}}" alt="{{$img->title}}">
+                        </a>
+                        @endif
+
+                        @php
+                        $iix++;
+                        @endphp
+                  </div>
+                  @endforeach
+               </div>
+            </div>
+         </div>
+
          @if(!empty($hotel_card))
          <div class="ap-cont aprt">
             <h3 class="cont-head rt_cardhead">מידע על כרטיס </h3>

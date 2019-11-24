@@ -60,7 +60,7 @@ class paymentController extends Controller
         if ((empty($cart)) || (empty($passengers)) || (empty($payee))) {
             return redirect('/');
         }
-        //dd($cart);
+        // dd($cart);
         if (empty($cart['package_id'])) {
             $cart['package_id'] = $cart['flight_sch'];
         }
@@ -91,25 +91,26 @@ class paymentController extends Controller
         session()->put('last_order_id', $order->id);
         $url = $this->connect_to_cardcom($item_name, $tran_id, $order->amount_paid_in_skl);
 
+        // return;
         if (empty($url)) {
             $order->payment_status = 3;
             $order->save();
             session()->forget('last_order_id');
             return redirect('payment-fail');
         }
+        // dd($url);
         return redirect($url);
     }
 
     public function connect_to_cardcom($item_name, $tran_id, $amount)
     {
-        return $this->JustForTest();
-
         $cart = session()->get('rami_pack_cart');
         $passengers = session()->get('rami_pack_passengers');
         $payee = session()->get('rami_pack_payee');
         if ((empty($cart)) || (empty($passengers)) || (empty($payee))) {
             return false;
         }
+        return $this->JustForTest($item_name, $tran_id, $amount * 100);
         // Account vars
         $vars = array();
         $vars['TerminalNumber'] = config('constant.TERMINAL_NUBMER');
@@ -711,12 +712,22 @@ class paymentController extends Controller
         }
     }
 
-    private function JustForTest()
+    private function JustForTest($item_name, $tran_id, $amount)
     {
-        $cgConf['tid'] = '0962922';
-        $cgConf['amount'] = 15000;
+        // $cgConf['tid'] = '0962831';
+        // $cgConf['amount'] = 15000;
+        // $cgConf['user'] = 'israeli';
+        // $cgConf['mid'] = '938';
+        // $cgConf['mid'] = '111111';
+        // $cgConf['password'] = 'I!fr43s!34.';
+        // $cgConf['password'] = 'B#cde1234';
+
+        $cgConf['cg_gateway_url'] = "https://cguat2.creditguard.co.il/xpo/Relay";
+        $cgConf['tid'] = '0962831';
+        $cgConf['mid'] = 938;
+        $cgConf['amount'] = $amount;
         $cgConf['user'] = 'israeli';
-        $cgConf['password'] = 'I!fr43s!34.';
+        $cgConf['password'] = 'I!fr43s!34';
         $cgConf['cg_gateway_url'] = "https://cguat2.creditguard.co.il/xpo/Relay";
 
         $poststring = 'user=' . $cgConf['user'];
@@ -724,38 +735,47 @@ class paymentController extends Controller
 
         /*Build Ashrait XML to post*/
         $poststring .= '&int_in=<ashrait>
-								<request>
-								<language>ENG</language>
-								<command>doDeal</command>
-								<requestId/>
-								<version>1000</version>
-								<doDeal>
-									<terminalNumber>' . $cgConf['tid'] . '</terminalNumber>
-									<authNumber/>
-									<transactionCode>Phone</transactionCode>
-									<transactionType>Debit</transactionType>
-									<total>' . $cgConf['amount'] . '</total>
-									<creditType>RegularCredit</creditType>
-									<cardNo>4580458045804580</cardNo>
-									<cvv>123</cvv>
-									<cardExpiration>1212</cardExpiration>
-									<validation>AutoComm</validation>
-									<numberOfPayments/>
-									<customerData>
-										<userData1/>
-										<userData2/>
-										<userData3/>
-										<userData4/>
-										<userData5/>
-									</customerData>
-									<currency>ILS</currency>
-									<firstPayment/>
-									<id>000000000</id>
-									<periodicalPayment/>
-									<user>גשגשגש</user>
-								</doDeal>
-							</request>
-						</ashrait>';
+						   <request>
+							<version>1000</version>
+							<language>HEB</language>
+							<dateTime></dateTime>
+							<command>doDeal</command>
+							<doDeal>
+								 <terminalNumber>' . $cgConf['tid'] . '</terminalNumber>
+								 <mainTerminalNumber/>
+								 <cardNo>CGMPI</cardNo>
+								 <total>' . $cgConf['amount'] . '</total>
+								 <transactionType>Debit</transactionType>
+								 <creditType>RegularCredit</creditType>
+								 <currency>ILS</currency>
+								 <transactionCode>Phone</transactionCode>
+								 <authNumber/>
+								 <numberOfPayments/>
+								 <firstPayment/>
+								 <periodicalPayment/>
+								 <validation>TxnSetup</validation>
+								 <dealerNumber/>
+								 <user>something</user>
+								 <mid>' . $cgConf['mid'] . '</mid>
+								 <uniqueid>' . time() . rand(100, 1000) . '</uniqueid>
+								 <mpiValidation>autoComm</mpiValidation>
+								 <email>someone@creditguard.co.il</email>
+								 <clientIP/>
+								 <customerData>
+								  <userData1/>
+								  <userData2/>
+								  <userData3/>
+								  <userData4/>
+								  <userData5/>
+								  <userData6/>
+								  <userData7/>
+								  <userData8/>
+								  <userData9/>
+								  <userData10/>
+								 </customerData>
+							</doDeal>
+						   </request>
+						  </ashrait>';
 
         //init curl connection
         if (function_exists("curl_init")) {
@@ -774,7 +794,7 @@ class paymentController extends Controller
 
             // on error - die with error message
             if (!empty($error)) {
-                die("Just error: $error");
+                die($error);
             }
 
             curl_close($CR);
@@ -783,20 +803,12 @@ class paymentController extends Controller
         if (function_exists("simplexml_load_string")) {
             if (strpos(strtoupper($result), 'HEB')) {$result = iconv("utf-8", "iso-8859-8", $result);}
             $xmlObj = simplexml_load_string($result);
-            if (isset($xmlObj->response->doDeal->status)) {
+            if (isset($xmlObj->response->doDeal->mpiHostedPageUrl)) {
                 // print out the url which we should redirect our customers to
-                echo "[" . $xmlObj->response->doDeal->status . "]";
-            } else {
-                die('<strong>Can\'t Create Transaction</strong> <br />' .
-                    'Error Code: ' . $xmlObj->response->result . '<br />' .
-                    'Message: ' . $xmlObj->response->message . '<br />' .
-                    'Addition Info: ' . $xmlObj->response->additionalInfo);
+                return $xmlObj->response->doDeal->mpiHostedPageUrl;
+                echo '<script>window.location=\'' . $xmlObj->response->doDeal->mpiHostedPageUrl . '\';</script>';
             }
-        } else {
-            die("simplexml_load_string function is not support, upgrade PHP version!");
         }
-
-        die("!Good");
+        return "";
     }
-
 }

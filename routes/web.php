@@ -1,4 +1,5 @@
 <?php
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -7,7 +8,8 @@
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
  */
-Route::get('/clear-cache', function() {
+
+Route::get('/clear-cache', function () {
     //dd('test');
     Artisan::call('cache:clear');
     return "Cache is cleared";
@@ -97,10 +99,6 @@ Route::get('admin/room_stock/{room_stock_id}/edit', 'admin\RoomController@room_s
 Route::put('admin/room_stock/{room_stock_id}', 'admin\RoomController@room_stock_update');
 Route::delete('admin/room_stock/{room_stock_id}', 'admin\RoomController@room_stock_delete');
 
-
-
-
-
 Route::get('admin/room/gallery/{id}', 'admin\RoomController@gallery');
 Route::put('admin/room/add_image/{id}', 'admin\RoomController@add_image');
 Route::get('admin/room/{id}/edit_image', 'admin\RoomController@edit_image');
@@ -153,7 +151,6 @@ Route::get('admin/card/{id}/page', 'admin\CardController@page');
 Route::put('admin/card/{id}/page', 'admin\CardController@save_page');
 Route::resource('admin/card', 'admin\CardController');
 
-
 Route::resource('admin/attraction', 'admin\AttractionController');
 Route::resource('admin/package-person', 'admin\PkgPersonController');
 Route::resource('admin/hotel-type', 'admin\HotelTypeController');
@@ -169,7 +166,6 @@ Route::post('/get_hotel_room', 'admin\HotelController@get_hotel_room');
 Route::post('/get_flight_sche_from_airline', 'admin\AirlineController@get_flight_sche_from_airline');
 Route::post('/get_car_from_flight_sche_id', 'admin\CarController@get_car_from_flight_sche_id');
 Route::post('/get_hotel_from_loc_id', 'admin\HotelController@get_hotel_from_loc');
-
 
 Route::post('/get_car_from_loc', 'admin\CarController@get_car_from_loc');
 Route::get('/admin/gallery', 'admin\GalleryController@create');
@@ -187,21 +183,17 @@ Route::get('/admin/pagelink/{pagelink_id}/edit', 'admin\PageController@edit_link
 Route::put('/admin/pagelink/{page_id}/edit/{pagelink_id}', 'admin\PageController@update_link');
 Route::delete('/admin/pagelink/{page_id}', 'admin\PageController@destroy_link');
 
-
 //order details route
 Route::get('/admin/orders-detail', 'admin\OrderController@index')->name('all orders');
 Route::get('/admin/orders-detail/{id}/edit', 'admin\OrderController@edit')->name('edit orders');
 Route::put('/admin/orders-detail/{id}', 'admin\OrderController@update');
 Route::delete('/admin/orders-detail/{id}', 'admin\OrderController@destroy');
 
-
-
-
 //mobile site route
-if(rami_checking_is_mobile()==1){
+if (rami_checking_is_mobile() == 1) {
     Route::get('/', 'mobile\MobileHomeController@home');
     Route::get('/package/{id}', 'mobile\MobileHomeController@package_detail');
-    Route::get('/fly-travel-packages', 'mobile\MobileHomeController@fly_travel_packages'); 
+    Route::get('/fly-travel-packages', 'mobile\MobileHomeController@fly_travel_packages');
     Route::get('/fly-travel-package/{id}', 'mobile\MobileHomeController@fly_travel_packages_detail');
     Route::get('/flights/{loc_id}', 'mobile\MobileHomeController@flights');
     Route::get('/search-flights', 'mobile\MobileHomeController@serach_flights');
@@ -211,13 +203,13 @@ if(rami_checking_is_mobile()==1){
     Route::get('/loc-accommodation/{loc_id}', 'mobile\MobileHomeController@accommodation');
     Route::get('/search-accommodation/', 'mobile\MobileHomeController@search_accommodation');
     Route::get('/accommodation/{id}', 'mobile\MobileHomeController@accommodation_detail');
-    Route::get('/testimonials', 'mobile\MobileHomeController@testimonials');    
+    Route::get('/testimonials', 'mobile\MobileHomeController@testimonials');
     Route::get('/contact', 'mobile\MobileHomeController@contact');
     Route::post('/send_contact', 'mobile\MobileHomeController@send_contact');
     Route::POST('/search', 'mobile\MobileHomeController@search_accommodation_hotel_code');
     Route::post('/submit-contact', 'mobile\MobileHomeController@submit_contact');
 
-}else{
+} else {
     //home route//main site
     Route::get('/', 'front\HomeController@index');
     Route::get('/package/{id}', 'front\HomeController@package');
@@ -236,15 +228,6 @@ if(rami_checking_is_mobile()==1){
     Route::post('/submit-contact', 'front\HomeController@submit_contact');
     Route::get('/testimonials', 'front\HomeController@testimonial');
 }
-
-
-
-
-
-
-
-
-
 
 Route::post('/submit-testimonial', 'front\HomeController@submit_testimonial');
 Route::get('/order-passengers', 'front\HomeController@order_passengers');
@@ -272,23 +255,19 @@ Route::get('payment-success', 'secure\CheckoutController@payment_success');
 Route::get('/payment-fail', 'secure\CheckoutController@payment_fail');
 Route::get('/payment/verify', 'secure\paymentController@payment_verify');
 
-
 //testing_only
 // Route::get('stock','secure\paymentController@stock');
 // Route::get('testing_sto','secure\paymentController@testing_pdf');
 
-
 //automation_route
-Route::get('auto/location_flight_count','automation\AutomationController@location_flight_count');
-Route::get('auto/location_fch_count','automation\AutomationController@location_fch_count');
-Route::get('auto/location_fc_count','automation\AutomationController@location_fc_count');
-Route::get('auto/location_hotel_count','automation\AutomationController@location_hotel_count');
-Route::get('auto/import_pages','automation\AutomationController@import_pages');
-Route::get('auto/copy_links','automation\AutomationController@copy_links');
-Route::get('auto/setup_all_package_cost','automation\AutomationController@setup_all_package_cost');
-Route::get('auto/update_pack_profit','automation\AutomationController@update_pack_profit');
-
-
+Route::get('auto/location_flight_count', 'automation\AutomationController@location_flight_count');
+Route::get('auto/location_fch_count', 'automation\AutomationController@location_fch_count');
+Route::get('auto/location_fc_count', 'automation\AutomationController@location_fc_count');
+Route::get('auto/location_hotel_count', 'automation\AutomationController@location_hotel_count');
+Route::get('auto/import_pages', 'automation\AutomationController@import_pages');
+Route::get('auto/copy_links', 'automation\AutomationController@copy_links');
+Route::get('auto/setup_all_package_cost', 'automation\AutomationController@setup_all_package_cost');
+Route::get('auto/update_pack_profit', 'automation\AutomationController@update_pack_profit');
 
 //Ajax Controller
 Route::post('/load_more', 'ajax\AjaxController@ajax_for_load_more');
@@ -299,6 +278,4 @@ Route::post('/packages-location-dates', 'ajax\AjaxController@ajax_for_packages_l
 Route::post('/flights-src-desti-dates', 'ajax\AjaxController@ajax_for_flights_src_desti_dates');
 Route::post('/submit-contact-form', 'ajax\AjaxController@ajax_for_submit_contact_form');
 
-
 Route::get('/{slug}', 'front\HomeController@static_page');
-

@@ -33,14 +33,14 @@
             </div>
             <div class="col-sm-12 rt-inner text-right">
                <div class="terms-heading-small-text">{{ $hotel_code }}
-                  <strong>: קוד מלון </strong> {{$hotel->hotel_address}}
+                  <strong>: קוד מקום הלינה </strong> {{$hotel->hotel_address}}
                </div>
             </div>
             <div class="col-sm-12 rt-inner listpkg">
                <h3 class="pkg_head">לינה :</h3>
                <div class="rtpkglst">
                   <img src="{{url('assets/mobile')}}/images/rooms.png" alt="">
-                  <h4>פרטי המלון</h4>
+                  <h4>פרטי מקום הלינה</h4>
                   <div class="pkg_btnn"><a href="javascript:void(0)" id="accom_ginfo_btn"><img
                            src="{{url('assets/mobile')}}/images/pkg-arrow-yellow.png" class="inf_arrow"></a></div>
                </div>
@@ -199,13 +199,13 @@
    <div class="rt_popup accomsec" id="accom_ginfo">
       <div class="popup-header">
          <div class="rt_close"><img src="{{url('assets/mobile')}}/images/rt_navclse.png"></div>
-         <h4><img src="{{url('assets/mobile')}}/images/rooms.png" alt="">פרטי המלון </h4>
+         <h4><img src="{{url('assets/mobile')}}/images/rooms.png" alt="">פרטי מקום הלינה </h4>
       </div>
       <div class="ap-cont">
          <h5> {{$hotel->hotel_display_name}} </h5>
          <p>כתובת: {{ $hotel_code }} - {{ $hotel->hotel_address }} </p>
          <div class="ap-cont aprt">
-            <h3 class="pkg_head">מתקני המלון :</h3>
+            <h3 class="pkg_head">מתקני מקום הלינה :</h3>
             <ul>
                @foreach($features as $feature)
                <li>{{ get_hotel_features($feature) }}</li>

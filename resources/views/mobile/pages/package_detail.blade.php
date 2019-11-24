@@ -73,7 +73,7 @@
                      class="rt_headd">{{ get_rami_page_placeholder('help_text_apartment',1) }}</span></h3>
                <div class="rtpkglst">
                   <img src="{{url('assets/mobile/images/rooms.png')}}" alt="">
-                  <h4>פרטי המלון</h4>
+                  <h4>פרטי מקום הלינה</h4>
                   <div class="pkg_btnn"><a href="JavaScript:Void(0);" id="rt_lodging_btn"><img
                            src="{{url('assets/mobile/images/pkg-arrow-yellow.png')}}" class="inf_arrow"></a></div>
                </div>
@@ -242,13 +242,13 @@
    <div class="rt_popup" id="rt_lodging">
       <div class="popup-header">
          <div class="rt_close"><img src="{{url('assets/mobile/images/rt_navclse.png')}}"></div>
-         <h4><img src="{{url('assets/mobile/images/rooms.png')}}" alt="">פרטי המלון</h4>
+         <h4><img src="{{url('assets/mobile/images/rooms.png')}}" alt="">פרטי מקום הלינה</h4>
       </div>
       <div class="ap-cont">
          <h5> {{$hotel->hotel_display_name}} </h5>
          <p>כתובת: {{ $hotel->hotel_code }} - {{ $hotel->hotel_address }}</p>
          <div class="ap-cont aprt">
-            <h3 class="pkg_head">מתקני המלון :</h3>
+            <h3 class="pkg_head">מתקני מקום הלינה :</h3>
             <ul>
                <ul>
                   @foreach($amenities as $amenity)
@@ -593,7 +593,7 @@
                            המחיר בחבילה כולל:</strong><br>
                         טיסה סדירה ליעד המבוקש, אירוח בדירת נופש/מלון ורכב סטיישן משפחתי ל-8 ימים<br>
                         ניתן להזמין חדרי מלון/דירות בגדלים אחרים ויש לפנות למשרדנו לצורך כך.<br>
-                        בהרכב של 6 נפשות ייתכן ותידרש הזמנת 2 חדרים במלון , לצורך כך יש לפנות למשרדנו לתמחור.<br>
+                        בהרכב של 6 נפשות ייתכן ותידרש הזמנת 2 חדרים , לצורך כך יש לפנות למשרדנו לתמחור.<br>
                         <br>
                         בדירות נופש כולל מצעים ומגבות, נקיון סופי</p>
                      <p>נושא המחזור הינו מנדטורי ביער השחור. על מנת לעמוד &nbsp;בדרישות מקום הלינה וחוקי גרמניה אנא מלאו

@@ -397,7 +397,7 @@
                 </ul>
               </div>
               <div class="col-md-12 ap-cont">
-                <h6 class="cont-head">מתקני המלון </h6>
+                <h6 class="cont-head">מתקני מקום הלינה </h6>
                 <ul>
                   @foreach($features as $feature)
                   <li>{{ get_hotel_features($feature) }}</li>
@@ -445,7 +445,7 @@
             <div class="row">
               <div class="col-md-12 bd-sec">
                 <div class="bd-head">
-                  <h3><img src="{{url('/assets/front/images')}}/apartment-ico.png"> מידע על המלון <span
+                  <h3><img src="{{url('/assets/front/images')}}/apartment-ico.png"> מידע על מקום הלינה <span
                       class="rt_headd"> {{ get_rami_page_placeholder('help_text_apartment_info',1) }}</span></h3>
                 </div>
               </div>

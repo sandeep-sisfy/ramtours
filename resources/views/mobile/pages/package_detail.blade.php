@@ -207,7 +207,7 @@
             </div>
 
             <div class="col-sm-12 car-inner">
-               <h3 class="pkg_head">רכב : <span
+               <h3 class="pkg_head">רכב <span
                      class="rt_headd">{{ get_rami_page_placeholder('help_text_vehicle',1) }}</span></h3>
                <div class="rt_crt_sec col-sm-12">
                   <img src="{{url('ramtours/'.$all_cars['first_car_img'])}}" class="img-fluid">

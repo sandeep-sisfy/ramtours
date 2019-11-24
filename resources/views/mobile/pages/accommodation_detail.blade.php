@@ -147,7 +147,7 @@
       <div class="container">
          <div class="row">
             <div class="col-sm-12">
-               <h3 class="pkg_head">{{ get_location_name($hotel_location) }} לינה נוספות באיזור </h3>
+               <h3 class="pkg_head">{{ get_location_name($hotel_location) }} לינות נוספות באיזור </h3>
             </div>
             <div class="col-sm-12 rt-inner hotel_div">
                @foreach($similar_loc_hotels as $hotel_new)

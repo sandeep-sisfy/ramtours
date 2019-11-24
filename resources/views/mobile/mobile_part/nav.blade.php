@@ -243,9 +243,18 @@
                      </li>
                   </ul>
                </li>
+
+               <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger {{ get_rami_active_menu('contact') }}"
+                     href="{{ url('/תקנון-אתר-רם-נסיעות-ותיירות') }}">תקנון האתר </a>
+               </li>
                <li class="nav-item">
                   <a class="nav-link js-scroll-trigger {{ get_rami_active_menu('contact') }}"
                      href="{{ url('/contact') }}">צור קשר</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger {{ get_rami_active_menu('contact') }}"
+                     href="{{ url('/אודות-רם-נסיעות-ותיירות') }}"> אודות</a>
                </li>
                </ul>
             </div>

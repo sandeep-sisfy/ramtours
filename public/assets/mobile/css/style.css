@@ -1148,3 +1148,7 @@ html.translated-ltr  .pkg-section .ranking font {font-size: 40px;}
 html.translated-ltr .pkgprc span font {font-size: 12px!important;}
 html.translated-ltr .pkgprc font {font-size: 32px!important;}
 .immediate_approval {font-size: 16px; font-weight: 700;}
+
+.flt-inner .flights-details-box-inner {
+	border: 2px solid #2f1919;
+}

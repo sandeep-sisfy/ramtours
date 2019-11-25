@@ -54,6 +54,11 @@ class paymentController extends Controller
 {
     public function payment()
     {
+        if (rami_checking_is_mobile()) {
+            return view('mobile.pages.temp_order');
+        } else {
+            return view('frontend.pages.temp_order');
+        }
         $cart = session()->get('rami_pack_cart');
         $passengers = session()->get('rami_pack_passengers');
         $payee = session()->get('rami_pack_payee');

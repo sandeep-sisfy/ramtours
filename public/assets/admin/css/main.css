@@ -23512,3 +23512,7 @@ li.hidden {
 .dataTables_length .bootstrap-select .dropdown-toggle{
     display:none;
 }
+
+.hidden {
+    display: none !important;
+}

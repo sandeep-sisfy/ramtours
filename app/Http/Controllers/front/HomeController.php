@@ -64,10 +64,12 @@ class HomeController extends Controller
             $start_date = date('Y') . '-' . $home_package_setting->show_by_month . '-1';
             $end_date = rami_get_require_date_format($start_date, 'Y-m-t');
             if ($package_type == 1) {
-                $packages = package::whereIn('package_flight_location', $location)->where([['package_type', 1], ['package_status', 1], ['package_start_date', '>=', date('Y-m-d')]])->whereMonth('package_start_date', $month)->orderBy('package_start_date', 'ASC')->orderBy('package_lowest_price', 'asc')->get();
+                $packages = package::whereIn('package_flight_location', $location)->where([['package_type', 1], ['package_status', 1], ['package_start_date', '>=', date('Y-m-d')]])->whereMonth('package_start_date', $month)
+                /* ->orderBy('package_start_date', 'ASC')*/->orderBy('package_lowest_price', 'asc')->get();
                 $show_setting[$count]['results'] = rami_page_loop_setup($packages, 'package_start_date', $skip_dates, $no_of_package_show);
             } elseif ($package_type == 3) {
-                $packages = package::whereIn('package_flight_location', $location)->where([['package_type', 3], ['package_status', 1], ['package_start_date', '>=', date('Y-m-d')]])->whereMonth('package_start_date', $month)->orderBy('package_start_date', 'ASC')->orderBy('package_lowest_price', 'asc')->get();
+                $packages = package::whereIn('package_flight_location', $location)->where([['package_type', 3], ['package_status', 1], ['package_start_date', '>=', date('Y-m-d')]])->whereMonth('package_start_date', $month)
+                /*->orderBy('package_start_date', 'ASC')*/->orderBy('package_lowest_price', 'asc')->get();
                 $show_setting[$count]['results'] = rami_page_loop_setup($packages, 'package_start_date', $skip_dates, $no_of_package_show);
             } elseif ($package_type == 4) {
                 $flight_schedule = new flight_schedule();

@@ -34,8 +34,8 @@ class MobileHomeController extends Controller
         $data['header_custom_code'] = get_rami_setting('homepage_header_custom_code');
         $data['footer_custom_code'] = get_rami_setting('homepage_footer_custom_code');
         $data['search'] = 1;
-        $data['packages'] = package::where([['package_type', 1], ['package_status', 1], ['is_hot_deal', 1], ['package_start_date', '>=', date('Y-m-d')]])->orderBy('package_start_date', 'ASC')->orderBy('package_lowest_price', 'asc')->skip(0)->take(40)->get();
-        $total_element = package::where([['package_type', 1], ['package_status', 1], ['is_hot_deal', 1], ['package_start_date', '>=', date('Y-m-d')]])->orderBy('package_start_date', 'ASC')->orderBy('package_lowest_price', 'asc')->get()->count();
+        $data['packages'] = package::where([['package_type', 1], ['package_status', 1], ['is_hot_deal', 1], ['package_start_date', '>=', date('Y-m-d')]]) /* ->orderBy('package_start_date', 'ASC')*/->orderBy('package_lowest_price', 'asc')->skip(0)->take(40)->get();
+        $total_element = package::where([['package_type', 1], ['package_status', 1], ['is_hot_deal', 1], ['package_start_date', '>=', date('Y-m-d')]]) /* ->orderBy('package_start_date', 'ASC')*/->orderBy('package_lowest_price', 'asc')->get()->count();
         if ($total_element > $data['packages']->count()) {
             $data['show_load_more'] = 1;
         } else {

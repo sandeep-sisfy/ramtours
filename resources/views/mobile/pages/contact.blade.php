@@ -52,6 +52,17 @@
                      <textarea rows="4" class="form-control" name="msg_contact"></textarea>
                   </div>
                   <div class="clear"></div>
+                  <div class="form-group row">
+                     <div class="col-md-6 offset-md-4">
+                        <div class="g-recaptcha" data-sitekey="{{ env('CAPTCHA_SITE_KEY') }}"></div>
+                        @if ($errors->has('g-recaptcha-response'))
+                        <span class="invalid-feedback" style="display: block;">
+                           <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
+                        </span>
+                        @endif
+                     </div>
+                  </div>
+                  <div class="clear"></div>
                   <div class="contactselection">
                      <select name="interested_in" class="form-control wpcf7-select">
                         <option value="">אני מעוניין במידע על...</option>
@@ -72,6 +83,8 @@
                   </div>
                   <div class="clear"></div>
                   <div class="contact-check-box">
+
+
                      <span class="check_label">הוסף אותי למועדון לקוחות לצורך קבלת מבצעים ופרסומות</span>
                      <input type="checkbox" name="checkbox-11"
                         value="הוסף אותי למועדון לקוחות לצורך קבלת מבצעים ופרסומות" style="opacity: 1;">

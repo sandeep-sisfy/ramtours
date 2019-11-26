@@ -22,6 +22,7 @@ use App\model\page;
 use App\model\pagelink;
 use App\model\room;
 use App\model\testimonial;
+use App\Rules\Captcha;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\URL;
@@ -748,6 +749,7 @@ class HomeController extends Controller
             'phone' => 'required',
             'email' => 'required|email',
             // 'interested_in' => 'required',
+            'g-recaptcha-response' => new Captcha(),
         ], $messages);
         $user['first_name'] = $request->first_name;
         $user['last_name'] = $request->last_name;

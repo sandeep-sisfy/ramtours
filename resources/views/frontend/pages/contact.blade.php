@@ -61,6 +61,7 @@
                       @endif
                     </div>
                   </div>
+                  <div class="clear"></div>
                   <div class="contactselection">
                     <select name="interested_in" class="form-control wpcf7-select">
                       <option value="">אני מעוניין במידע על...</option>

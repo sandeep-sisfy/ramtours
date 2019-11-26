@@ -3,6 +3,7 @@
 namespace App\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
+use ReCaptcha\ReCaptcha;
 
 class Captcha implements Rule
 {
@@ -38,6 +39,6 @@ class Captcha implements Rule
      */
     public function message()
     {
-        return 'Complete the reCAPTCHA to submit the form';
+        return 'בטוח שאתה לא רובוט?';
     }
 }

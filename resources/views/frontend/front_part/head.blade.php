@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,6 +20,7 @@
   <link href="{{url('assets/front/css/jquery-ui.min.css')}}" rel="stylesheet">
   <link href="{{url('assets/front/css/style.css')}}" rel="stylesheet">
   <link href="{{url('assets/front/css/jquery.fancybox.css')}}" rel="stylesheet">
-  <link href="{{url('assets/front/css/daterangepicker.css')}}" rel="stylesheet">  
+  <link href="{{url('assets/front/css/daterangepicker.css')}}" rel="stylesheet">
   @show
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>

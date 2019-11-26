@@ -23,15 +23,8 @@
   <link href="{{url('assets/front/css/daterangepicker.css')}}" rel="stylesheet">
   @show
   <script src='https://www.google.com/recaptcha/api.js'></script>
-
   @if (env('APP_ENV') == 'production')
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-38205015-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-38205015-1');
-  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <meta name="google-site-verification" content="h70ijBBOLp8VIvyioyIFbMLLDQ0DHwg5QkNYskw27tM" />
   @endif
 </head>

@@ -22,6 +22,10 @@
    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
    @show
    <script src='https://www.google.com/recaptcha/api.js'></script>
+   @if (env('APP_ENV') == 'production')
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <meta name="google-site-verification" content="h70ijBBOLp8VIvyioyIFbMLLDQ0DHwg5QkNYskw27tM" />
+   @endif
 </head>
 
 <body class="home @yield('rami_front_page_class')">

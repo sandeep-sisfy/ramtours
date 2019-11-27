@@ -6,8 +6,10 @@
             <strong>'דוא"ל : '</strong>{{$email}}<br>
             <strong>'מכשיר טלפון : '</strong>{{$phone}}<br>
             @if(!empty($interested_in))
-            <strong>'אינטרס לקוחות : '</strong>{{$interested_in}}<br>
+            <strong>' מתעניין ב : '</strong>{{$interested_in}}<br>
             @endif
+            IP: {{getIp()}} <br>
+            IP: {{\Request::ip()}} <br>
             @if(!empty($msg))
             <strong>'הודעת לקוח : '</strong>{{$msg}}<br>
             @endif

@@ -20,15 +20,15 @@
                 <div class="contact-content rt_tstmn">
                     <img src="{{url('/assets/front/images')}}/recomendation-body-header.jpg" class="img-fluid test_img">
                     <div class="hotel-room-inner">
-                        <div class="terms-heading text-head-center"> להמשך ההזמנה אנא התקשרו למשרדי החברה <div
+                        <div class="terms-heading text-head-center"> לביצוע ההזמנה <div
                                 class="hotel-yellow-border-center"></div>
                         </div>
                         <p>לקוחות יקרים,</p>
                         <p>
-                            אנא, פנו למשרדי החברה להמשך ההזמנה. טלפון
-                            072-372-6240
+זמנית לא ניתן לבצע הזמנות באתר.יש לשלוח את פרטי ההזמנה , שמות מהדרכון או צילומי דרכון,פרטי החבילה או הטיסות וטלפון של הלקוח למייל
+contact@ramtours.com
                             <br>
-                            תודה רבה מראש, רמי.</p>
+                            תודה רבה </p>
                     </div>
                 </div>
             </div>
@@ -36,3 +36,4 @@
     </div>
 </section>
 @endsection
+

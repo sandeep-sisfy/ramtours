@@ -25,8 +25,10 @@ class CheckoutController extends Controller {
 		$data['year_slot_infants'] = 3;
 		$data['total_amount']=$rami_pack_cart['total_price_in_skl'];
 		if(rami_checking_is_mobile()){
+			return view('mobile.pages.temp_order', $data);
 			return view('mobile.pages.order_passangers', $data);
 		}
+		return view('frontend.pages.temp_order', $data);
 		return view('frontend.pages.order_passangers', $data);
 	}
 

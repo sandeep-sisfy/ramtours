@@ -66,7 +66,7 @@
                <!-- <h5>  החבילה כוללת:     </h5>-->
                <p>{!!rami_vacation_pkg_del_top_text($package->package_flight_location)!!}</p>
                <p class="rt_dts" style="display: none">משפחתי סטיישן
-                  {{rami_get_no_of_days_diff($package->package_start_date, $package->package_end_date)}} ימים </p>
+                  לילות {{rami_get_no_of_days_diff($package->package_start_date, $package->package_end_date)}} </p>
             </div>
             <div class="col-sm-12 rt-inner listpkg">
                <h3 class="pkg_head">לינה : <span
@@ -591,7 +591,7 @@
                      <p>מחיר החבילה המוצעת &nbsp;הינו למשפחה אחת של עד 6 נפשות בלבד.<br>
                         המלאי מוגבל.<strong><br>
                            המחיר בחבילה כולל:</strong><br>
-                        טיסה סדירה ליעד המבוקש, אירוח בדירת נופש/מלון ורכב סטיישן משפחתי ל-8 ימים<br>
+                        טיסה סדירה ליעד המבוקש, אירוח בדירת נופש/מלון ורכב סטיישן משפחתי ל-8 לילות<br>
                         ניתן להזמין חדרי מלון/דירות בגדלים אחרים ויש לפנות למשרדנו לצורך כך.<br>
                         בהרכב של 6 נפשות ייתכן ותידרש הזמנת 2 חדרים , לצורך כך יש לפנות למשרדנו לתמחור.<br>
                         <br>

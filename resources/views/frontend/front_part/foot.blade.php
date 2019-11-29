@@ -20,7 +20,7 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-38205015-1');
-  $(document).on({
+  $("img").on({
     "contextmenu": function (e) {
       console.log("ctx menu button:", e.which);
 

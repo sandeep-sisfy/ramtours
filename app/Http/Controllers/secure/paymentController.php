@@ -358,43 +358,44 @@ class paymentController extends Controller
         return false;
     }
 
+    public function payment_notOk(Request $request)
+    {
+        $order = order::find(session()->get('last_order_id'));
+        if (!empty($order)) {
+            $order->payment_status = 3;
+            $order->low_profile_code = $request->lowprofilecode;
+            $order->save();
+            session()->forget('last_order_id');
+            return redirect('payment-fail');
+        } else {
+            return redirect('payment-fail');
+        }
+    }
+
     public function payment_verify(Request $request)
     {
         // $response = $this->verify_deal($request->lowprofilecode);
         session()->forget('rami_pack_cart');
         session()->forget('rami_pack_passengers');
         session()->forget('rami_pack_payee');
-        if (!empty($response)) {
-            $order = order::where('tran_id', $response->get('userData1'))->get()->first();
-            if ($order->total_amount_skl > $order->amout_paid_in_skl) {
-                $order->payment_status = 4;
-            } else {
-                $order->payment_status = 1;
-            }
-            $order->low_profile_code = $response->get('authNumber');
-            $order->internal_deal_number = $response->get('uniqueID');
-            if ($order->is_stock_deducted == 0) {
-                $this->stock_update($order->id);
-                $this->order_pdf_generate($order->id);
-                $this->order_mail($order->id);
-                $order->is_stock_deducted = 1;
-            }
-            $order->save();
-            //session()->put('mail_order_id', $order->id);
-
-            return redirect('payment-success');
+        $order = order::where('tran_id', $response->get('userData1'))->get()->first();
+        if ($order->total_amount_skl > $order->amout_paid_in_skl) {
+            $order->payment_status = 4;
         } else {
-            $order = order::find(session()->get('last_order_id'));
-            if (!empty($order)) {
-                $order->payment_status = 3;
-                $order->low_profile_code = $request->lowprofilecode;
-                $order->save();
-                session()->forget('last_order_id');
-                return redirect('payment-fail');
-            } else {
-                return redirect('payment-fail');
-            }
+            $order->payment_status = 1;
         }
+        $order->low_profile_code = $response->get('authNumber');
+        $order->internal_deal_number = $response->get('uniqueID');
+        if ($order->is_stock_deducted == 0) {
+            $this->stock_update($order->id);
+            $this->order_pdf_generate($order->id);
+            $this->order_mail($order->id);
+            $order->is_stock_deducted = 1;
+        }
+        $order->save();
+        //session()->put('mail_order_id', $order->id);
+
+        return redirect('payment-success');
     }
     public function order_pdf_generate($order_id)
     {

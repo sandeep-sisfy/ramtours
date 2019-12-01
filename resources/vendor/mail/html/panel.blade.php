@@ -4,8 +4,8 @@
             <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
                 <tr>
                     <td class="panel-item">
-                         ה יקר, {{$payee_name}} <br>
-                         ההזמנה שלך הושלמה, נא למצוא את ההזמנה שלך מכה:
+                        {{$payee_name}} <br>
+                        ההזמנה שלך הושלמה, נא ראו מסמך מצורף:
                         {{ Illuminate\Mail\Markdown::parse($slot) }}
                     </td>
                 </tr>

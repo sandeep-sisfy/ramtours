@@ -129,7 +129,7 @@ class paymentController extends Controller
         $cgConf['password'] = env('CG_PASSWORD'); // 'I!fr43s!34';
 
         $cgConf['success_url'] = route('payment_verify');
-        $cgConf['fail_url'] = route('payment_fail');
+        $cgConf['fail_url'] = route('payment_notok');
         $cgConf['cancel_url'] = route('payment_cancel');
 
         // dd($cgConf);

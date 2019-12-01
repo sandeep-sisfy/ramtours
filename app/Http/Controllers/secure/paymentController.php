@@ -363,7 +363,7 @@ class paymentController extends Controller
         $order = order::find(session()->get('last_order_id'));
         if (!empty($order)) {
             $order->payment_status = 3;
-            $order->low_profile_code = $request->lowprofilecode;
+            $order->low_profile_code = $request->get('authNumber');
             $order->save();
             session()->forget('last_order_id');
             return redirect('payment-fail');
@@ -384,8 +384,8 @@ class paymentController extends Controller
         } else {
             $order->payment_status = 1;
         }
-        $order->low_profile_code = $response->get('authNumber');
-        $order->internal_deal_number = $response->get('uniqueID');
+        $order->low_profile_code = $request->get('authNumber');
+        $order->internal_deal_number = $request->get('uniqueID');
         if ($order->is_stock_deducted == 0) {
             $this->stock_update($order->id);
             $this->order_pdf_generate($order->id);

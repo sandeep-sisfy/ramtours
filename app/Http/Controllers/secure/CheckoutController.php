@@ -187,7 +187,7 @@ class CheckoutController extends Controller
     {
         // $rami_pack_cart = session()->get('rami_pack_passengers');
         //if (empty($rami_pack_cart)) {
-        return redirect('/');
+        return redirect('/about');
         //}
         //dd($rami_pack_cart);
         if (!empty(rami_checking_is_mobile())) {

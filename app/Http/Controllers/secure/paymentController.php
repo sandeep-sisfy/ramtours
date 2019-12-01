@@ -65,7 +65,6 @@ class paymentController extends Controller
         if ((empty($cart)) || (empty($passengers)) || (empty($payee))) {
             return redirect('/');
         }
-        // dd($cart);
         if (empty($cart['package_id'])) {
             $cart['package_id'] = $cart['flight_sch'];
         }
@@ -94,7 +93,7 @@ class paymentController extends Controller
         $order->tran_id = $tran_id;
         $order->save();
         session()->put('last_order_id', $order->id);
-        $url = $this->connect_to_cardcom($item_name, $tran_id, $order->amount_paid_in_skl);
+        $url = $this->connect_to_payguard($item_name, $tran_id, $payee['payer_email'], $order->amount_paid_in_skl * 100);
 
         // return;
         if (empty($url)) {
@@ -104,7 +103,120 @@ class paymentController extends Controller
             return redirect('payment-fail');
         }
         // dd($url);
-        return redirect($url);
+        if (rami_checking_is_mobile()) {
+            return view('mobile.pages.credit_pay', compact('url'));
+        } else {
+            return view('frontend.pages.credit_pay', compact('url'));
+        }
+        // return redirect($url);
+    }
+
+    private function connect_to_payguard($item_name, $tran_id, $u_email, $amount)
+    {
+        $cart = session()->get('rami_pack_cart');
+        $passengers = session()->get('rami_pack_passengers');
+        $payee = session()->get('rami_pack_payee');
+        if ((empty($cart)) || (empty($passengers)) || (empty($payee))) {
+            return false;
+        }
+
+        $cgConf['cg_gateway_url'] = env("CG_URL", "https://cguat2.creditguard.co.il/xpo/Relay");
+        $cgConf['tid'] = env('CG_TERMINAL_ID', '');
+        $cgConf['mid'] = env('CG_MID'); // 938;
+        $cgConf['amount'] = $amount;
+        $cgConf['pay_email'] = $u_email;
+        $cgConf['user'] = env('CG_USER'); //'israeli';
+        $cgConf['password'] = env('CG_PASSWORD'); // 'I!fr43s!34';
+
+        $cgConf['success_url'] = route('payment_success');
+        $cgConf['fail_url'] = route('payment_fail');
+        $cgConf['cancel_url'] = route('payment_cancel');
+
+        // dd($cgConf);
+
+        $poststring = 'user=' . $cgConf['user'];
+        $poststring .= '&password=' . $cgConf['password'];
+
+        /*Build Ashrait XML to post*/
+        $poststring .= '&int_in=<ashrait>
+						   <request>
+							<version>1000</version>
+							<language>HEB</language>
+							<dateTime></dateTime>
+							<command>doDeal</command>
+							<doDeal>
+								 <terminalNumber>' . $cgConf['tid'] . '</terminalNumber>
+								 <mainTerminalNumber/>
+								 <cardNo>CGMPI</cardNo>
+								 <total>' . $cgConf['amount'] . '</total>
+								 <transactionType>Debit</transactionType>
+								 <creditType>RegularCredit</creditType>
+								 <currency>ILS</currency>
+								 <transactionCode>Phone</transactionCode>
+								 <authNumber/>
+								 <numberOfPayments/>
+								 <firstPayment/>
+								 <periodicalPayment/>
+								 <validation>TxnSetup</validation>
+								 <dealerNumber/>
+								 <user>something</user>
+								 <mid>' . $cgConf['mid'] . '</mid>
+								 <uniqueid>' . time() . rand(100, 1000) . '</uniqueid>
+								 <mpiValidation>autoComm</mpiValidation>
+                                 <email>' . $cgConf['pay_email'] . '</email>
+                                 <successUrl >' . $cgConf['success_url'] . '</successUrl >
+                                 <errorUrl >' . $cgConf['fail_url'] . '</errorUrl >
+                                 <cancelUrl >' . $cgConf['cancel_url'] . '</cancelUrl>
+								 <clientIP/>
+								 <customerData>
+								  <userData1/>
+								  <userData2/>
+								  <userData3/>
+								  <userData4/>
+								  <userData5/>
+								  <userData6/>
+								  <userData7/>
+								  <userData8/>
+								  <userData9/>
+								  <userData10/>
+								 </customerData>
+							</doDeal>
+						   </request>
+						  </ashrait>';
+
+        //init curl connection
+        if (function_exists("curl_init")) {
+            $CR = curl_init();
+            curl_setopt($CR, CURLOPT_URL, $cgConf['cg_gateway_url']);
+            curl_setopt($CR, CURLOPT_POST, 1);
+            curl_setopt($CR, CURLOPT_FAILONERROR, true);
+            curl_setopt($CR, CURLOPT_POSTFIELDS, $poststring);
+            curl_setopt($CR, CURLOPT_RETURNTRANSFER, 1);
+            curl_setopt($CR, CURLOPT_SSL_VERIFYPEER, 0);
+            curl_setopt($CR, CURLOPT_FAILONERROR, true);
+
+            //actual curl execution perfom
+            $result = curl_exec($CR);
+            $error = curl_error($CR);
+
+            // on error - die with error message
+            if (!empty($error)) {
+                die($error);
+            }
+
+            curl_close($CR);
+        }
+
+        if (function_exists("simplexml_load_string")) {
+            if (strpos(strtoupper($result), 'HEB')) {$result = iconv("utf-8", "iso-8859-8", $result);}
+            $xmlObj = simplexml_load_string($result);
+            if (isset($xmlObj->response->doDeal->mpiHostedPageUrl)) {
+                // print out the url which we should redirect our customers to
+                return $xmlObj->response->doDeal->mpiHostedPageUrl;
+                echo '<script>window.location=\'' . $xmlObj->response->doDeal->mpiHostedPageUrl . '\';</script>';
+            }
+        }
+        return "";
     }
 
     public function connect_to_cardcom($item_name, $tran_id, $amount)
@@ -115,7 +227,8 @@ class paymentController extends Controller
         if ((empty($cart)) || (empty($passengers)) || (empty($payee))) {
             return false;
         }
-        return $this->JustForTest($item_name, $tran_id, $amount * 100);
+        $email = "eli@eli.com";
+        return $this->connect_to_payguard($item_name, $tran_id, $email, $amount * 100);
         // Account vars
         $vars = array();
         $vars['TerminalNumber'] = config('constant.TERMINAL_NUBMER');
@@ -717,103 +830,4 @@ class paymentController extends Controller
         }
     }
 
-    private function JustForTest($item_name, $tran_id, $amount)
-    {
-        // $cgConf['tid'] = '0962831';
-        // $cgConf['amount'] = 15000;
-        // $cgConf['user'] = 'israeli';
-        // $cgConf['mid'] = '938';
-        // $cgConf['mid'] = '111111';
-        // $cgConf['password'] = 'I!fr43s!34.';
-        // $cgConf['password'] = 'B#cde1234';
-
-        $cgConf['cg_gateway_url'] = "https://cguat2.creditguard.co.il/xpo/Relay";
-        $cgConf['tid'] = '0962831';
-        $cgConf['mid'] = 938;
-        $cgConf['amount'] = $amount;
-        $cgConf['user'] = 'israeli';
-        $cgConf['password'] = 'I!fr43s!34';
-        $cgConf['cg_gateway_url'] = "https://cguat2.creditguard.co.il/xpo/Relay";
-
-        $poststring = 'user=' . $cgConf['user'];
-        $poststring .= '&password=' . $cgConf['password'];
-
-        /*Build Ashrait XML to post*/
-        $poststring .= '&int_in=<ashrait>
-						   <request>
-							<version>1000</version>
-							<language>HEB</language>
-							<dateTime></dateTime>
-							<command>doDeal</command>
-							<doDeal>
-								 <terminalNumber>' . $cgConf['tid'] . '</terminalNumber>
-								 <mainTerminalNumber/>
-								 <cardNo>CGMPI</cardNo>
-								 <total>' . $cgConf['amount'] . '</total>
-								 <transactionType>Debit</transactionType>
-								 <creditType>RegularCredit</creditType>
-								 <currency>ILS</currency>
-								 <transactionCode>Phone</transactionCode>
-								 <authNumber/>
-								 <numberOfPayments/>
-								 <firstPayment/>
-								 <periodicalPayment/>
-								 <validation>TxnSetup</validation>
-								 <dealerNumber/>
-								 <user>something</user>
-								 <mid>' . $cgConf['mid'] . '</mid>
-								 <uniqueid>' . time() . rand(100, 1000) . '</uniqueid>
-								 <mpiValidation>autoComm</mpiValidation>
-								 <email>someone@creditguard.co.il</email>
-								 <clientIP/>
-								 <customerData>
-								  <userData1/>
-								  <userData2/>
-								  <userData3/>
-								  <userData4/>
-								  <userData5/>
-								  <userData6/>
-								  <userData7/>
-								  <userData8/>
-								  <userData9/>
-								  <userData10/>
-								 </customerData>
-							</doDeal>
-						   </request>
-						  </ashrait>';
-
-        //init curl connection
-        if (function_exists("curl_init")) {
-            $CR = curl_init();
-            curl_setopt($CR, CURLOPT_URL, $cgConf['cg_gateway_url']);
-            curl_setopt($CR, CURLOPT_POST, 1);
-            curl_setopt($CR, CURLOPT_FAILONERROR, true);
-            curl_setopt($CR, CURLOPT_POSTFIELDS, $poststring);
-            curl_setopt($CR, CURLOPT_RETURNTRANSFER, 1);
-            curl_setopt($CR, CURLOPT_SSL_VERIFYPEER, 0);
-            curl_setopt($CR, CURLOPT_FAILONERROR, true);
-
-            //actual curl execution perfom
-            $result = curl_exec($CR);
-            $error = curl_error($CR);
-
-            // on error - die with error message
-            if (!empty($error)) {
-                die($error);
-            }
-
-            curl_close($CR);
-        }
-
-        if (function_exists("simplexml_load_string")) {
-            if (strpos(strtoupper($result), 'HEB')) {$result = iconv("utf-8", "iso-8859-8", $result);}
-            $xmlObj = simplexml_load_string($result);
-            if (isset($xmlObj->response->doDeal->mpiHostedPageUrl)) {
-                // print out the url which we should redirect our customers to
-                return $xmlObj->response->doDeal->mpiHostedPageUrl;
-                echo '<script>window.location=\'' . $xmlObj->response->doDeal->mpiHostedPageUrl . '\';</script>';
-            }
-        }
-        return "";
-    }
 }

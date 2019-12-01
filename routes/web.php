@@ -251,8 +251,9 @@ Route::post('/verify-cart', 'secure\CartController@verify_cart');
 Route::get('/order-passengers', 'secure\CheckoutController@order_passengers');
 Route::post('/order-passengers', 'secure\CheckoutController@save_order_passengers');
 Route::get('/payment/process', 'secure\paymentController@payment');
-Route::get('payment-success', 'secure\CheckoutController@payment_success');
-Route::get('/payment-fail', 'secure\CheckoutController@payment_fail');
+Route::get('payment-success', 'secure\CheckoutController@payment_success')->name('payment_success');
+Route::get('/payment-fail', 'secure\CheckoutController@payment_fail')->name('payment_fail');
+Route::get('/payment-cancel', 'secure\CheckoutController@payment_fail')->name('payment_cancel');
 Route::get('/payment/verify', 'secure\paymentController@payment_verify');
 
 //testing_only

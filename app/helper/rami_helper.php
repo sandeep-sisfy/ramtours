@@ -799,13 +799,13 @@ if (!function_exists('rami_fly_drive_pkg_mobile_html')) {
         $html .= '<div class="rt-packframes filterable">';
         $html .= '     <div class="frm-left col-6 col-sm-6">';
         $html .= '        <div class="fly-head">';
-        $html .= '           <h5>חחבילת נופש ל' . $pack_loction_name . '</h5>';
+        $html .= '           <h5>חבילת נופש ל' . $pack_loction_name . ' &nbsp;</h5>';
         $html .= '        </div>';
         $html .= '        <div class="nights">';
-        $html .= '           <p >טטיסה ל' . $flight_locations . ' </p>';
+        $html .= '           <p >טיסה ל' . $flight_locations . ' &nbsp;</p>';
         $html .= '        </div>';
         $html .= '        <div class="package-date">';
-        $html .= '           <p><i class="fa fa-calendar" aria-hidden="true"></i> ' . $start_date . '-' . $end_date . '   </p>';
+        $html .= '           <p><i class="fa fa-calendar" aria-hidden="true"></i> ' . $start_date . '-' . $end_date . '   &nbsp;</p>';
         $html .= '        </div>';
         $html .= '     </div>';
         if ($pkgs_fhc['instant_approval'] == 1) {

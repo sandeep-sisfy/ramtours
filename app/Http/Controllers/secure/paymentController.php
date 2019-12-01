@@ -378,7 +378,7 @@ class paymentController extends Controller
         session()->forget('rami_pack_cart');
         session()->forget('rami_pack_passengers');
         session()->forget('rami_pack_payee');
-        $order = order::where('tran_id', $response->get('userData1'))->get()->first();
+        $order = order::where('tran_id', $request->get('userData1'))->get()->first();
         if ($order->total_amount_skl > $order->amout_paid_in_skl) {
             $order->payment_status = 4;
         } else {

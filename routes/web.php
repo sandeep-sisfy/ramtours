@@ -254,7 +254,7 @@ Route::get('/payment/process', 'secure\paymentController@payment');
 Route::get('payment-success', 'secure\CheckoutController@payment_success')->name('payment_success');
 Route::get('/payment-fail', 'secure\CheckoutController@payment_fail')->name('payment_fail');
 Route::get('/payment-cancel', 'secure\CheckoutController@payment_fail')->name('payment_cancel');
-Route::get('/payment/verify', 'secure\paymentController@payment_verify');
+Route::get('/payment/verify', 'secure\paymentController@payment_verify')->name('payment_verify');
 
 //testing_only
 // Route::get('stock','secure\paymentController@stock');

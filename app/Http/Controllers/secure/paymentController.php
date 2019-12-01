@@ -128,7 +128,7 @@ class paymentController extends Controller
         $cgConf['user'] = env('CG_USER'); //'israeli';
         $cgConf['password'] = env('CG_PASSWORD'); // 'I!fr43s!34';
 
-        $cgConf['success_url'] = route('payment_success');
+        $cgConf['success_url'] = route('payment_verify');
         $cgConf['fail_url'] = route('payment_fail');
         $cgConf['cancel_url'] = route('payment_cancel');
 
@@ -169,7 +169,7 @@ class paymentController extends Controller
                                  <cancelUrl >' . $cgConf['cancel_url'] . '</cancelUrl>
 								 <clientIP/>
 								 <customerData>
-								  <userData1/>
+								  <userData1>' . $tran_id . '</userData1>
 								  <userData2/>
 								  <userData3/>
 								  <userData4/>
@@ -360,19 +360,19 @@ class paymentController extends Controller
 
     public function payment_verify(Request $request)
     {
-        $response = $this->verify_deal($request->lowprofilecode);
+        // $response = $this->verify_deal($request->lowprofilecode);
         session()->forget('rami_pack_cart');
         session()->forget('rami_pack_passengers');
         session()->forget('rami_pack_payee');
         if (!empty($response)) {
-            $order = order::where(['tran_id' => $response['ReturnValue']])->get()->first();
+            $order = order::where('tran_id', $response->get('userData1'))->get()->first();
             if ($order->total_amount_skl > $order->amout_paid_in_skl) {
                 $order->payment_status = 4;
             } else {
                 $order->payment_status = 1;
             }
-            $order->low_profile_code = $response['lowprofilecode'];
-            $order->internal_deal_number = $response['InternalDealNumber'];
+            $order->low_profile_code = $response->get('authNumber');
+            $order->internal_deal_number = $response->get('uniqueID');
             if ($order->is_stock_deducted == 0) {
                 $this->stock_update($order->id);
                 $this->order_pdf_generate($order->id);
@@ -456,7 +456,7 @@ class paymentController extends Controller
         if (empty($pkgs_fhc)) {
             return '';
         }
-        $data['title'] = 'חחבילת נופש   ';
+        $data['title'] = 'חבילת נופש   ';
         $pack_loction_name = '';
         $no_of_days = rami_get_no_of_days_diff($pkgs_fhc->package_start_date, $pkgs_fhc->package_end_date);
         $start_date = rami_get_require_date_format($pkgs_fhc->package_start_date, 'd/m');

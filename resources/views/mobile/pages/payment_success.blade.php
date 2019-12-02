@@ -1,3 +1,5 @@
+@extends('mobile.home_nonav')
+@section('mobile_container')
 <section class="rt_error">
   <div class="container">
     <div class="row">
@@ -9,3 +11,4 @@
     </div>
   </div>
 </section>
+@endsection

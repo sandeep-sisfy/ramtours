@@ -52,6 +52,6 @@ class OrderCompleted extends Mailable
         $data['total_price_in_euro']=$cart['total_price_in_euro'];
         $data['amount_paid_in_skl']=$this->order['amount_paid_in_skl'];
         $data['remaining_amount_in_skl']= $data['total_price_in_skl']-$data['amount_paid_in_skl'];
-        return $this->markdown('emails.orders.order_completed', $data)->subject('Ramtours:order Completed-'.$data['tran1'])->to($this->order['payee_email_id'])->cc(get_rami_setting('notification_email_id'))->attach(base_path().'/storage/app/ramtours_assets/orders/'.$this->order['tran_id'].'.pdf');
+        return $this->markdown('emails.orders.order_completed', $data)->subject('רמטורס:הזמנה חדשה מהאתר - '.$data['tran1'])->to($this->order['payee_email_id'])->cc(get_rami_setting('notification_email_id'))->attach(base_path().'/storage/app/ramtours_assets/orders/'.$this->order['tran_id'].'.pdf');
     }
 }

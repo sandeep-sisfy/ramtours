@@ -1,4 +1,4 @@
-@extends('frontend.home_main')
+@extends('frontend.front_notop')
 <section class="rt_error">
   <div class="container">
     <div class="row">

@@ -14,7 +14,7 @@
 @endif
 <script>
 
-  document.addEventListener('contextmenu', event => event.preventDefault());
+
 
   $('img').bind('touchend', function (e) {
     e.preventDefault();
@@ -50,6 +50,7 @@
 
   gtag('config', 'UA-38205015-1');
 
+  document.addEventListener('contextmenu', event => event.preventDefault());
 </script>
 @endif
 

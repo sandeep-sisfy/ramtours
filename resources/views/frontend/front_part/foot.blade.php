@@ -12,17 +12,22 @@
 @if(!empty($footer_custom_code))
 {!! $footer_custom_code !!}
 @endif
-@if (env('APP_ENV') == 'production')
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-38205015-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
 
-  gtag('config', 'UA-38205015-1');
+  document.addEventListener('contextmenu', event => event.preventDefault());
+
+  $('img').bind('touchend', function (e) {
+    e.preventDefault();
+    // Add your code here. 
+    $(this).click();
+    // This line still calls the standard click event, in case the user needs to interact with the element that is being clicked on, but still avoids zooming in cases of double clicking.
+  })
+  $("img").mousedown(function () {
+    console.log("Mouse down over p1!");
+  });
   $("img").on({
     "contextmenu": function (e) {
-      console.log("ctx menu button:", e.which);
+      // console.log("ctx menu button:", e.which);
 
       // Stop the context menu
       e.preventDefault();
@@ -34,6 +39,16 @@
       console.log("normal mouse up:", e.which);
     }
   });
+
+</script>
+@if (env('APP_ENV') == 'production')
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-38205015-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-38205015-1');
 
 </script>
 @endif

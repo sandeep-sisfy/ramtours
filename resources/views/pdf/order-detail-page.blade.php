@@ -539,11 +539,11 @@
                      </tr>
                      <tr>
                         <td><strong>כתובת הלקוח : </strong> {{$client_address}}</td>
-			<td></td>
+                        <td></td>
                      </tr>
                      <tr>
                         <td><strong>עיר : </strong>{{$client_city}}</td>
-			<td></td>
+                        <td></td>
                      </tr>
                      <tr>
                         <td><strong>טלפון נייד : </strong> {{$client_mobile}}</td>
@@ -559,10 +559,6 @@
                      </tr>
                      <tr>
                         <td><strong>שיטת תשלום : </strong> עסקת אשראי</td>
-                        <td></td>
-                     </tr>
-                     <tr>
-                        <td><strong>קוד עסקה : </strong></td>
                         <td></td>
                      </tr>
 

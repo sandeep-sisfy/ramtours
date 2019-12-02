@@ -927,7 +927,7 @@ body.rami_pkg_body_cls footer {margin-top: 0;}
 .rt_persons input:disabled{background-color: #ffffff;} 
 .rt_persons {background: red;padding-top: 8px!important;padding-bottom: 8px;border-radius: 5px;/* border: 1px solid #fcdb9e; */background: #ffffff;box-shadow: 0 0 0 1px #CCCCCC inset !important;padding-right: 12px;text-align: right;}
 section.orpassdtl label {color: red;font-size: 12px;text-align: right;float: right;position: relative;
-    margin: -6px 2px 5px 0;}
+    margin: -6px 2px 5px 0; padding-right: 25px;}
 section.orpassdtl label.custom-control-label {margin-right: 25px;color: #000;font-size: 15px;}
 section.orpassdtl h3.pkg_head:after{content:"";background:none;}
 span.plus.disabled, span.plus1.disabled,span.plus2.disabled{pointer-events: none;}

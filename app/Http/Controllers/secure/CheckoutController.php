@@ -87,14 +87,14 @@ class CheckoutController extends Controller
         $vaild = [
             'payer_firstname' => 'required',
             'payer_surname' => 'required',
-            'payer_home_phone' => 'required|min:7|max:7',
-            'home_code' => 'required',
+            'payer_home_phone' => 'min:7|max:7',
+            // 'home_code' => 'required',
             'payer_mobile_phone' => 'required|min:7|max:7',
             'mobile_code' => 'required',
             'payer_email' => 'required',
             'payer_address' => 'required',
             'payer_city' => 'required',
-            'payer_zipcode' => 'required',
+            // 'payer_zipcode' => 'required',
             'payer_terms' => 'required',
         ];
         for ($a = 1; $a <= $adults; $a++) {

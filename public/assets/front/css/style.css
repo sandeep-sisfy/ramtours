@@ -1660,3 +1660,7 @@ div.pack_room .ap-cont div.gallery {
     float: right;
 	border: none;
 }
+
+.custom-control-label {
+	padding-right: 20px;
+}

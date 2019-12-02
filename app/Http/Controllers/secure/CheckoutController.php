@@ -87,7 +87,7 @@ class CheckoutController extends Controller
         $vaild = [
             'payer_firstname' => 'required',
             'payer_surname' => 'required',
-            'payer_home_phone' => 'min:7|max:7',
+            //'payer_home_phone' => 'min:7|max:7',
             // 'home_code' => 'required',
             'payer_mobile_phone' => 'required|min:7|max:7',
             'mobile_code' => 'required',

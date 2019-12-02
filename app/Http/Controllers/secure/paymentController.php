@@ -466,7 +466,7 @@ class paymentController extends Controller
         if (!empty($pack_loction->loc_name)) {
             $pack_loction_name = $pack_loction->loc_name;
         }
-        $data['title'] = $pkgs_fhc->id . '-' . $pack_loction_name . $data['title'] . $end_date . '-' . $start_date;
+        $data['title'] = $pkgs_fhc->id . '-' . $pack_loction_name . ' ' . $data['title'] . $end_date . '-' . $start_date;
         $data['order_date'] = rami_get_require_date_time_format($order->created_at, 'd-m-y h:i');
         $data['order_type'] = '';
         if ($cart['package_type'] == 1) {

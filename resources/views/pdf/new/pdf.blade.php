@@ -106,7 +106,7 @@
       <tbody>
          <tr>
             <td>
-               <h2>פרטי הזמנה: - {{ $title }} &nbps;</h2>
+               <h2>פרטי הזמנה: {{ $title }} &nbps;</h2>
                <p>מסמך זה אינו מהווה אישור סופי להזמנתך, הזמנתך כרוכה באישור סופי מול ספקי התיירות וחברת התעופה, נציגי
                   רם נסיעות ותיירות יחזרו אליכם תוך 48
                   שעות לאישורה הסופי
@@ -539,11 +539,11 @@
                      </tr>
                      <tr>
                         <td><strong>כתובת הלקוח : </strong> {{$client_address}}</td>
-                        <td><strong>תמזהה עסקה 1 : </strong>{{$trxn1}}</td>
+			<td></td>
                      </tr>
                      <tr>
                         <td><strong>עיר : </strong>{{$client_city}}</td>
-                        <td><strong>תמזהה עסקה 2 : </strong>{{$trxn2}}</td>
+			<td></td>
                      </tr>
                      <tr>
                         <td><strong>טלפון נייד : </strong> {{$client_mobile}}</td>

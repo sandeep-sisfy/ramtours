@@ -254,7 +254,7 @@
                </li>
                <li class="nav-item">
                   <a class="nav-link js-scroll-trigger {{ get_rami_active_menu('contact') }}"
-                     href="{{ url('/אודות-רם-נסיעות-ותיירות') }}"> אודות</a>
+                     href="{{ url('/אודות-רם-נסיעות-ותיירות') }}"> אודות רם נסיעות</a>
                </li>
                </ul>
             </div>

@@ -14,13 +14,11 @@
             <strong>'כמות  : '</strong>{{$total_peoples}}<br>
             <strong>'מבוגרים  : '</strong>{{$adults}}<br>
             <strong>'ילדים   : '</strong>{{$childs}}<br>
-            <strong>'מזהה עסקה  1  : '</strong>{{$tran1}}<br>
-            <strong>'מזהה עסקה  2  : '</strong>{{$tran2}}<br>
             <strong>'סה"כ מחיר בשקלים  : '</strong>₪{{$total_price_in_skl}}<br>
             <strong>'סה"כ מחיר ביורו   : '</strong>€{{$total_price_in_euro}}<br>
             <strong>'שולמו באתר באשראי  : '</strong>₪{{$amount_paid_in_skl}}<br>
             @if(!empty($remaining_amount_in_skl))
-            <strong>'כמות שנותרה  : '</strong>₪{{$remaining_amount_in_skl}}<br>
+            <strong>'הסכום שנותר לתשלום: '</strong>₪{{$remaining_amount_in_skl}}<br>
             @endif
         </td>
     </tr>

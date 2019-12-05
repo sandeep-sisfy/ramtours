@@ -98,6 +98,7 @@ class PackageController extends Controller
         $this->validate($request, $valid_array, $messages);
         $package->package_title = $request->package_title;
         $package->is_display_pkg_title = $request->is_display_pkg_title;
+        $package->is_fix_profit = $request->is_fix_profit;
         $package->package_desc = $request->package_desc;
         $package->package_type = $request->package_type;
         $package->package_start_date = $request->package_start_date;
@@ -203,6 +204,7 @@ class PackageController extends Controller
         $this->validate($request, $valid_array, $messages);
         $package->package_title = $request->package_title;
         $package->is_display_pkg_title = $request->is_display_pkg_title;
+        $package->is_fix_profit = $request->is_fix_profit;
         $package->package_desc = $request->package_desc;
         $package->package_type = $request->package_type;
         $package->package_start_date = $request->package_start_date;

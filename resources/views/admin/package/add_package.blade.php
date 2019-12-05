@@ -260,6 +260,25 @@ $package='';
                             </div>
                             {!! get_form_error_msg($errors, 'profit_curr') !!}
                         </div>
+
+                        <div class="form-group form-float">
+                            <label class="profit">Changing package profit when flight-package-profit changed: </label>
+                            <input type="radio" name="is_fix_profit" id="active" class="with-gap radio-col-amber"
+                                value="1"
+                                {!!get_edit_select_check_pvr_old_value_with_obj('is_fix_profit',$package,'is_fix_profit',1, 'chacked'
+                                )!!}>
+                            <label for="active" class="m-l-10 m-r-10">Don't change</label>
+                            <input type="radio" name="is_fix_profit" id="Inactive" class="with-gap radio-col-amber"
+                                value="0"
+                                {!!get_edit_select_check_pvr_old_value_with_obj('is_fix_profit',$package,'is_fix_profit',0, 'chacked'
+                                )!!}>
+                            <label for="Inactive" class="m-l-10 m-r-10">Do change</label>
+                            {!! get_form_error_msg($errors, 'is_fix_profit') !!}
+                        </div>
+
+
+
+
                         <div class="form-group form-float rami_fhc_pack">
                             <div class="form-line">
                                 <input type="text" class="form-control" name="package_profit_fhc"
@@ -293,6 +312,7 @@ $package='';
 
                             </div>
                         </div>
+
                         <div class="form-group form-float">
 
                             <label class="profit">Hot Deal : </label>

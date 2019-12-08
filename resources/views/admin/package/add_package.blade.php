@@ -263,16 +263,16 @@ $package='';
 
                         <div class="form-group form-float">
                             <label class="profit">Changing package profit when flight-package-profit changed: </label>
-                            <input type="radio" name="is_fix_profit" id="active" class="with-gap radio-col-amber"
+                            <input type="radio" name="is_fix_profit" id="fix_active" class="with-gap radio-col-amber"
                                 value="1"
                                 {!!get_edit_select_check_pvr_old_value_with_obj('is_fix_profit',$package,'is_fix_profit',1, 'chacked'
                                 )!!}>
-                            <label for="active" class="m-l-10 m-r-10">Don't change</label>
-                            <input type="radio" name="is_fix_profit" id="Inactive" class="with-gap radio-col-amber"
+                            <label for="fix_active" class="m-l-10 m-r-10">Don't change</label>
+                            <input type="radio" name="is_fix_profit" id="fix_Inactive" class="with-gap radio-col-amber"
                                 value="0"
                                 {!!get_edit_select_check_pvr_old_value_with_obj('is_fix_profit',$package,'is_fix_profit',0, 'chacked'
                                 )!!}>
-                            <label for="Inactive" class="m-l-10 m-r-10">Do change</label>
+                            <label for="fix_Inactive" class="m-l-10 m-r-10">Do change</label>
                             {!! get_form_error_msg($errors, 'is_fix_profit') !!}
                         </div>
 

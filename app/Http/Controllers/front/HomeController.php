@@ -639,6 +639,7 @@ class HomeController extends Controller
         if ($total_element > 8) {
             $data['show_load_more'] = 1;
         }
+        // dd($data);
         return view('frontend.pages.search_vacation_packages', $data);
     }
     public function loc_vacation_packages($loc_id)

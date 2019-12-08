@@ -308,6 +308,9 @@ class AutomationController extends Controller
                         continue;
                     }
                     $flight_price = get_rami_flight_price($flight);
+
+                    $flight_price = $this->getFlightPriceWithPackage($flight_price, $curr_flight->package_profit, $curr_pack->is_fix_profit, $curr_pack->package_profit_fhc);
+
                     if ($count == 1) {
                         $flight_id = $flight;
                         $old_price = $flight_price;
@@ -394,6 +397,8 @@ class AutomationController extends Controller
                         continue;
                     }
                     $flight_price = get_rami_flight_price($flight);
+                    $flight_price = $this->getFlightPriceWithPackage($flight_price, $curr_flight->package_profit, $curr_pack->is_fix_profit, $curr_pack->package_profit_fhc);
+
                     if ($count == 1) {
                         $flight_id = $flight;
                         $old_price = $flight_price;
@@ -506,6 +511,8 @@ class AutomationController extends Controller
                         continue;
                     }
                     $flight_price = get_rami_flight_price($flight);
+                    $flight_price = $this->getFlightPriceWithPackage($flight_price, $curr_flight->package_profit, $curr_pack->is_fix_profit, $curr_pack->package_profit_fhc);
+
                     if ($count == 1) {
                         $flight_id = $flight;
                         $old_price = $flight_price;
@@ -553,7 +560,6 @@ class AutomationController extends Controller
     {
         $curr_pack = package::find($id);
         if (!empty($curr_pack)) {
-            // dd($curr_pack);
             $start_date = $curr_pack->package_start_date;
             $end_date = $curr_pack->package_end_date;
             if (($curr_pack->package_type == 1) || ($curr_pack->package_type == 2)) {
@@ -653,18 +659,8 @@ class AutomationController extends Controller
                     continue;
                 }
                 $flight_price = get_rami_flight_price($flight);
-                // EH - get package price
-                //==================================================== EH
-                $f_package_profit = $curr_flight->package_profit;
-                $pkg_is_fix = $curr_pack->is_fix_profit;
-                $prf = 0;
-                if ($pkg_is_fix) {
-                    $prf = $curr_pack->package_profit_fhc; // TBD - get by get_rami_pakage_profit
-                } else {
-                    $prf = (int) $f_package_profit;
-                }
-                $flight_price = $flight_price > $prf ? $flight_price : $prf;
-                //==================================================== EH
+                $flight_price = $this->getFlightPriceWithPackage($flight_price, $curr_flight->package_profit, $curr_pack->is_fix_profit, $curr_pack->package_profit_fhc);
+
                 if ($count == 1) {
                     $flight_id = $flight;
                     $old_price = $flight_price;
@@ -690,6 +686,8 @@ class AutomationController extends Controller
             $car_price = get_rami_car_price_cheapest($curr_pack->cheapest_car, $start_date);
             $room_price = get_rami_room_price_cheapest($curr_pack->cheapest_room, $start_date);
             $flight_price = get_rami_flight_price($curr_pack->cheapest_flight_sche);
+            $flight_price = $this->getFlightPriceWithPackage($flight_price, $curr_flight->package_profit, $curr_pack->is_fix_profit, $curr_pack->package_profit_fhc);
+
             if (($car_price['person'] != $room_price['person']) && ($room_price['person'] != 0) && ($car_price['person'] != 0)) {
                 $room_price_new = get_rami_room_price($curr_pack->cheapest_room, $car_price['person'], $start_date);
                 $car_price_new = get_rami_car_price($curr_pack->cheapest_car, $room_price['person'], $start_date);
@@ -774,5 +772,20 @@ class AutomationController extends Controller
                 }
             }
         }
+    }
+
+    private function getFlightPriceWithPackage($flight_price, $package_profit, $is_fix_profit, $package_profit_fhc)
+    {
+        // EH - get package price
+        //==================================================== EH
+        $prf = 0;
+        if ($is_fix_profit) {
+            $prf = $package_profit_fhc; // TBD - get by get_rami_pakage_profit
+        } else {
+            $prf = (int) $package_profit;
+        }
+
+        return $flight_price > $prf ? $flight_price : $prf;
+        //==================================================== EH
     }
 }

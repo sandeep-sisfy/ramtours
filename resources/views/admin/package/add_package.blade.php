@@ -595,8 +595,8 @@ $package='';
                         var selected = '';
                         $.each(res.flight_schedule, function (index, el) {
                             el.id = el.id.toString();
-                            console.log(prv_flight_sche);
-                            console.log(el.id);
+                            // console.log(prv_flight_sche);
+                            // console.log(el.id);
                             if ($.inArray(el.id, prv_flight_sche) != -1) {
                                 selected = 'selected="true"';
                             } else {

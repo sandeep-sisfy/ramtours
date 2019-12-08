@@ -23,7 +23,7 @@
     // This line still calls the standard click event, in case the user needs to interact with the element that is being clicked on, but still avoids zooming in cases of double clicking.
   })
   $("img").mousedown(function () {
-    console.log("Mouse down over p1!");
+    // console.log("Mouse down over p1!");
   });
   $("img").on({
     "contextmenu": function (e) {
@@ -33,10 +33,10 @@
       e.preventDefault();
     },
     "mousedown": function (e) {
-      console.log("normal mouse down:", e.which);
+      // console.log("normal mouse down:", e.which);
     },
     "mouseup": function (e) {
-      console.log("normal mouse up:", e.which);
+      // console.log("normal mouse up:", e.which);
     }
   });
 

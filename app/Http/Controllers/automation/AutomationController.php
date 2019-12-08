@@ -553,6 +553,7 @@ class AutomationController extends Controller
     {
         $curr_pack = package::find($id);
         if (!empty($curr_pack)) {
+            // dd($curr_pack);
             $start_date = $curr_pack->package_start_date;
             $end_date = $curr_pack->package_end_date;
             if (($curr_pack->package_type == 1) || ($curr_pack->package_type == 2)) {
@@ -652,6 +653,18 @@ class AutomationController extends Controller
                     continue;
                 }
                 $flight_price = get_rami_flight_price($flight);
+                // EH - get package price
+                //==================================================== EH
+                $f_package_profit = $curr_flight->package_profit;
+                $pkg_is_fix = $curr_pack->is_fix_profit;
+                $prf = 0;
+                if ($pkg_is_fix) {
+                    $prf = $curr_pack->package_profit_fhc; // TBD - get by get_rami_pakage_profit
+                } else {
+                    $prf = (int) $f_package_profit;
+                }
+                $flight_price = $flight_price > $prf ? $flight_price : $prf;
+                //==================================================== EH
                 if ($count == 1) {
                     $flight_id = $flight;
                     $old_price = $flight_price;

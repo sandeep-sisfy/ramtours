@@ -555,6 +555,7 @@ class AutomationController extends Controller
         foreach ($packages as $package) {
             $this->setup_low_cost_for_package($package->id);
         }
+             // $this->setup_low_cost_for_package(358);
     }
     public function setup_low_cost_for_package($id)
     {
@@ -653,11 +654,14 @@ class AutomationController extends Controller
             $new_flight_sch = array();
             $count = 1;
             $flight_id = null;
+	    $fl_pkg_profit = 0;
+
             foreach ($flights as $flight) {
                 $curr_flight = flight_schedule::find($flight);
                 if (empty($curr_flight)) {
                     continue;
                 }
+		$fl_pkg_profit = $curr_flight->package_profit;
                 $flight_price = get_rami_flight_price($flight);
                 $flight_price = $this->getFlightPriceWithPackage($flight_price, $curr_flight->package_profit, $curr_pack->is_fix_profit, $curr_pack->package_profit_fhc);
 
@@ -686,7 +690,7 @@ class AutomationController extends Controller
             $car_price = get_rami_car_price_cheapest($curr_pack->cheapest_car, $start_date);
             $room_price = get_rami_room_price_cheapest($curr_pack->cheapest_room, $start_date);
             $flight_price = get_rami_flight_price($curr_pack->cheapest_flight_sche);
-            $flight_price = $this->getFlightPriceWithPackage($flight_price, $curr_flight->package_profit, $curr_pack->is_fix_profit, $curr_pack->package_profit_fhc);
+            $flight_price = $this->getFlightPriceWithPackage($flight_price, $fl_pkg_profit, $curr_pack->is_fix_profit, $curr_pack->package_profit_fhc);
 
             if (($car_price['person'] != $room_price['person']) && ($room_price['person'] != 0) && ($car_price['person'] != 0)) {
                 $room_price_new = get_rami_room_price($curr_pack->cheapest_room, $car_price['person'], $start_date);
@@ -782,13 +786,12 @@ class AutomationController extends Controller
         if ($is_fix_profit) {
             $prf = $package_profit_fhc; // TBD - get by get_rami_pakage_profit
         } else {
-            $prf = (int) $package_profit;
+		if ( (int) $package_profit > 0 ) { $prf = (int) $package_profit; } else { $prf = $package_profit_fhc; }
         }
 
-	if ($flight_price < 1) {
-		$flight_price = $prf;
-	}
-        return $flight_price < $prf ? $flight_price : $prf;
+	return $flight_price + $prf;
+
+	
         //==================================================== EH
     }
 }

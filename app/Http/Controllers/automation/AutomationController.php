@@ -785,7 +785,7 @@ class AutomationController extends Controller
             $prf = (int) $package_profit;
         }
 
-        return $flight_price > $prf ? $flight_price : $prf;
+        return $flight_price < $prf ? $flight_price : $prf;
         //==================================================== EH
     }
 }

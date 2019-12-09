@@ -299,7 +299,7 @@ class CartController extends Controller
 
         if (!$is_fix_package) {
             if ($flight_package_profit > 0) {
-                if ($package_profit_per_person < $flight_package_profit) {
+                if ($package_profit_per_person > $flight_package_profit) {
                     $package_profit_per_person = $flight_package_profit;
                 }
             }

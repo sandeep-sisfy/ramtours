@@ -730,6 +730,13 @@ class AutomationController extends Controller
                 // $adults_total_extra_charge=$per_adults_extra_charge*$adults*$no_of_days;
                 // $total+= $adults_total_extra_charge;
                 $profit = get_rami_pakage_profit($curr_pack->id, $total) * $persons1;
+		if ($fl_pkg_profit < $profit) {
+			if (!$curr_pack->is_fix_profit) {
+				if ($fl_pkg_profit > 0) {
+					$profit = $fl_pkg_profit;
+				}
+			}
+		}
                 $total += $profit;
                 $total_euro = get_rami_price_conversion_shekel_to_other($total, 2);
                 $per_peson1 = get_rami_round_num($total_euro / $persons1);
@@ -751,6 +758,13 @@ class AutomationController extends Controller
             // $adults_total_extra_charge=$per_adults_extra_charge*2*$no_of_days;
             // $total+= $adults_total_extra_charge;
             $profit = get_rami_pakage_profit($curr_pack->id, $total) * $persons;
+	    if ($fl_pkg_profit < $profit) {
+		    if (!$curr_pack->is_fix_profit) {
+			    if ($fl_pkg_profit > 0) {
+				    $profit = $fl_pkg_profit;
+			    }
+		    }
+	    }
             $total += $profit;
             $total_euro = get_rami_price_conversion_shekel_to_other($total, 2);
             if ($persons == 0) {
@@ -791,7 +805,7 @@ class AutomationController extends Controller
         }
 
 	$t = $flight_price + $prf;
-	// print "$flight_price + $prf   [$package_profit, $package_profit_fhc]  = $t \n";
+	 // print "$flight_price + $prf   [$package_profit, $package_profit_fhc]  = $t \n";
 	return $flight_price; // + $prf;
 
 	

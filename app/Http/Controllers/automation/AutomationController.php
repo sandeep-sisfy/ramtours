@@ -553,9 +553,10 @@ class AutomationController extends Controller
     {
         $packages = package::where([['package_type', 1], ['package_status', 1]])->get();
         foreach ($packages as $package) {
+		// print "pkg: " . $package->id . " " ;
             $this->setup_low_cost_for_package($package->id);
         }
-             // $this->setup_low_cost_for_package(358);
+              //$this->setup_low_cost_for_package(671);
     }
     public function setup_low_cost_for_package($id)
     {
@@ -789,7 +790,9 @@ class AutomationController extends Controller
 		if ( (int) $package_profit > 0 ) { $prf = (int) $package_profit; } else { $prf = $package_profit_fhc; }
         }
 
-	return $flight_price + $prf;
+	$t = $flight_price + $prf;
+	// print "$flight_price + $prf   [$package_profit, $package_profit_fhc]  = $t \n";
+	return $flight_price; // + $prf;
 
 	
         //==================================================== EH

@@ -553,10 +553,10 @@ class AutomationController extends Controller
     {
         $packages = package::where([['package_type', 1], ['package_status', 1]])->get();
         foreach ($packages as $package) {
-		// print "pkg: " . $package->id . " " ;
+            // print "pkg: " . $package->id . " " ;
             $this->setup_low_cost_for_package($package->id);
         }
-              //$this->setup_low_cost_for_package(671);
+        // $this->setup_low_cost_for_package(562);
     }
     public function setup_low_cost_for_package($id)
     {
@@ -655,14 +655,14 @@ class AutomationController extends Controller
             $new_flight_sch = array();
             $count = 1;
             $flight_id = null;
-	    $fl_pkg_profit = 0;
+            $fl_pkg_profit = 0;
 
             foreach ($flights as $flight) {
                 $curr_flight = flight_schedule::find($flight);
                 if (empty($curr_flight)) {
                     continue;
                 }
-		$fl_pkg_profit = $curr_flight->package_profit;
+                $fl_pkg_profit = $curr_flight->package_profit;
                 $flight_price = get_rami_flight_price($flight);
                 $flight_price = $this->getFlightPriceWithPackage($flight_price, $curr_flight->package_profit, $curr_pack->is_fix_profit, $curr_pack->package_profit_fhc);
 
@@ -730,13 +730,15 @@ class AutomationController extends Controller
                 // $adults_total_extra_charge=$per_adults_extra_charge*$adults*$no_of_days;
                 // $total+= $adults_total_extra_charge;
                 $profit = get_rami_pakage_profit($curr_pack->id, $total) * $persons1;
-		if ($fl_pkg_profit < $profit) {
-			if (!$curr_pack->is_fix_profit) {
-				if ($fl_pkg_profit > 0) {
-					$profit = $fl_pkg_profit;
-				}
-			}
-		}
+                // print "  (1) Profit -> [$fl_pkg_profit * $person1] $profit \n";
+                if ($fl_pkg_profit * $persons1 < $profit) {
+                    if (!$curr_pack->is_fix_profit) {
+                        if ($fl_pkg_profit > 0) {
+                            $profit = $fl_pkg_profit * $persons1;
+                        }
+                    }
+                }
+                // print "  after Profit -> $profit \n";
                 $total += $profit;
                 $total_euro = get_rami_price_conversion_shekel_to_other($total, 2);
                 $per_peson1 = get_rami_round_num($total_euro / $persons1);
@@ -758,13 +760,15 @@ class AutomationController extends Controller
             // $adults_total_extra_charge=$per_adults_extra_charge*2*$no_of_days;
             // $total+= $adults_total_extra_charge;
             $profit = get_rami_pakage_profit($curr_pack->id, $total) * $persons;
-	    if ($fl_pkg_profit < $profit) {
-		    if (!$curr_pack->is_fix_profit) {
-			    if ($fl_pkg_profit > 0) {
-				    $profit = $fl_pkg_profit;
-			    }
-		    }
-	    }
+            // print "  (1) Profit -> [$fl_pkg_profit * $persons ] [$profit] \n";
+            if ($fl_pkg_profit * $persons < $profit) {
+                if (!$curr_pack->is_fix_profit) {
+                    if ($fl_pkg_profit > 0) {
+                        $profit = $fl_pkg_profit * $persons;
+                    }
+                }
+            }
+            // print "  after Profit -> $profit \n";
             $total += $profit;
             $total_euro = get_rami_price_conversion_shekel_to_other($total, 2);
             if ($persons == 0) {
@@ -801,14 +805,13 @@ class AutomationController extends Controller
         if ($is_fix_profit) {
             $prf = $package_profit_fhc; // TBD - get by get_rami_pakage_profit
         } else {
-		if ( (int) $package_profit > 0 ) { $prf = (int) $package_profit; } else { $prf = $package_profit_fhc; }
+            if ((int) $package_profit > 0) {$prf = (int) $package_profit;} else { $prf = $package_profit_fhc;}
         }
 
-	$t = $flight_price + $prf;
-	 // print "$flight_price + $prf   [$package_profit, $package_profit_fhc]  = $t \n";
-	return $flight_price; // + $prf;
+        $t = $flight_price + $prf;
+        // print "$flight_price + $prf   [$package_profit, $package_profit_fhc]  = $t \n";
+        return $flight_price; // + $prf;
 
-	
         //==================================================== EH
     }
 }

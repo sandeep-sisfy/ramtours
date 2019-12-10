@@ -731,15 +731,20 @@ class AutomationController extends Controller
                 // $adults_total_extra_charge=$per_adults_extra_charge*$adults*$no_of_days;
                 // $total+= $adults_total_extra_charge;
                 $profit = get_rami_pakage_profit($curr_pack->id, $total) * $persons1;
-                // print "  (1) Profit -> [$fl_pkg_profit * $person1] $profit \n";
-                if ($fl_pkg_profit * $persons1 < $profit) {
-                    if (!$curr_pack->is_fix_profit) {
-                        if ($fl_pkg_profit > 0) {
-                            // print " IsFix ";
-                            $profit = $fl_pkg_profit * $persons1;
-                        }
-                    }
+                if ($fl_pkg_profit > 0) {
+                    $profit = $fl_pkg_profit * $person1;
                 }
+                // print "  (1) Profit -> [$fl_pkg_profit * $person1] $profit \n";
+                /*
+                if ($fl_pkg_profit * $persons1 < $profit) {
+                if (!$curr_pack->is_fix_profit) {
+                if ($fl_pkg_profit > 0) {
+                // print " IsFix ";
+                $profit = $fl_pkg_profit * $persons1;
+                }
+                }
+                }
+                 */
                 // print "  after Profit -> $profit \n";
                 $total += $profit;
                 $total_euro = get_rami_price_conversion_shekel_to_other($total, 2);
@@ -762,15 +767,21 @@ class AutomationController extends Controller
             // $adults_total_extra_charge=$per_adults_extra_charge*2*$no_of_days;
             // $total+= $adults_total_extra_charge;
             $profit = get_rami_pakage_profit($curr_pack->id, $total) * $persons;
-            // print "  (1) Profit -> [$fl_pkg_profit * $persons ] [$profit] \n";
-            if ($fl_pkg_profit * $persons < $profit) {
-                if (!$curr_pack->is_fix_profit) {
-                    if ($fl_pkg_profit > 0) {
-                        // print " IsFix ";
-                        $profit = $fl_pkg_profit * $persons;
-                    }
-                }
+            if ($fl_pkg_profit > 0) {
+                $profit = $fl_pkg_profit * $persons;
             }
+
+            // print "  (1) Profit -> [$fl_pkg_profit * $persons ] [$profit] \n";
+            /*
+            if ($fl_pkg_profit * $persons < $profit) {
+            if (!$curr_pack->is_fix_profit) {
+            if ($fl_pkg_profit > 0) {
+            // print " IsFix ";
+            $profit = $fl_pkg_profit * $persons;
+            }
+            }
+            }
+             */
             // print "  after Profit -> $profit \n";
             $total += $profit;
             $total_euro = get_rami_price_conversion_shekel_to_other($total, 2);

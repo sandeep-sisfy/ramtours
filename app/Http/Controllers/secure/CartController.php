@@ -298,13 +298,18 @@ class CartController extends Controller
         $package_profit_per_person = get_rami_pakage_profit($package->id, $total);
 
         if (!$is_fix_package) {
-            if ($flight_package_profit > 0) {
-                if ($package_profit_per_person > $flight_package_profit) {
-                    $package_profit_per_person = $flight_package_profit;
-                }
-            }
+            if ($flight_package_profit > 0) {$package_profit_per_person = $flight_package_profit;}
         }
 
+        /*
+        if (!$is_fix_package) {
+        if ($flight_package_profit > 0) {
+        if ($package_profit_per_person > $flight_package_profit) {
+        $package_profit_per_person = $flight_package_profit;
+        }
+        }
+        }
+         */
         $package_profit = ($prv_temp_cart['adults'] + $prv_temp_cart['childs']) * $package_profit_per_person;
 
         /*

@@ -553,10 +553,11 @@ class AutomationController extends Controller
     {
         $packages = package::where([['package_type', 1], ['package_status', 1]])->get();
         foreach ($packages as $package) {
-            // print "pkg: " . $package->id . " " ;
+            // print "pkg: " . $package->id . " ";
             $this->setup_low_cost_for_package($package->id);
         }
-        // $this->setup_low_cost_for_package(562);
+        // print "Package: 358 ";
+        // $this->setup_low_cost_for_package(358);
     }
     public function setup_low_cost_for_package($id)
     {
@@ -734,6 +735,7 @@ class AutomationController extends Controller
                 if ($fl_pkg_profit * $persons1 < $profit) {
                     if (!$curr_pack->is_fix_profit) {
                         if ($fl_pkg_profit > 0) {
+                            // print " IsFix ";
                             $profit = $fl_pkg_profit * $persons1;
                         }
                     }
@@ -764,6 +766,7 @@ class AutomationController extends Controller
             if ($fl_pkg_profit * $persons < $profit) {
                 if (!$curr_pack->is_fix_profit) {
                     if ($fl_pkg_profit > 0) {
+                        // print " IsFix ";
                         $profit = $fl_pkg_profit * $persons;
                     }
                 }

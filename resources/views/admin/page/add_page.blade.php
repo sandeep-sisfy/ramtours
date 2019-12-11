@@ -2,6 +2,8 @@
 @section('admin_head_css')
 @parent
 <link rel="stylesheet" href="{{ $assets_admin }}/plugins/bootstrap-select/css/bootstrap-select.css" />
+<link href="{{ $assets_admin }}/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css"
+    rel="stylesheet">
 @endsection
 @section('title',$page_title)
 @section('title_breadcrumb',$page_title)
@@ -32,6 +34,11 @@ $page='';
                         {{ csrf_field() }}
                         @section('method_field')
                         @show
+
+
+
+
+
                         <div class="form-group form-float">
                             <div class="form-line">
                                 <input type="text" class="form-control" name="page_title"
@@ -115,6 +122,47 @@ $page='';
                             <label for="deactive" class="m-l-10 m-r-10">Deactive</label>
                             {!! get_form_error_msg($errors, 'page_status') !!}
                         </div>
+
+
+
+                        <div class="form-group form-float">
+                            <div class="form-line">
+                                <label class="form-label">Package Start Date</label>
+                                <input type="text" class="form-control flight_start_date" name="package_start_date"
+                                    value="{!! get_edit_input_pvr_old_value_with_obj('package_start_date',$page, 'package_start_date')!!}">
+                                {!! get_form_error_msg($errors, 'package_start_date') !!}
+                            </div>
+                        </div>
+
+                        <div class="form-group form-float">
+                            <div class="form-line">
+                                <label class="form-label">Package End Date</label>
+                                <input type="text" class="form-control flight_start_date" name="package_end_date"
+                                    value="{!! get_edit_input_pvr_old_value_with_obj('package_end_date',$page, 'package_end_date')!!}">
+                                {!! get_form_error_msg($errors, 'package_end_date') !!}
+                            </div>
+                        </div>
+
+                        {{-- <pre> {{ print_r($locations) }}</pre> --}}
+                        <div class="form-group form-float">
+                            <div class="form-line">
+                                <select class="form-control show-tick" name="package_flight_location"
+                                    id="package_flight_location" data-live-search="true">
+                                    <option value="">Select Location</option>
+                                    @foreach($locations as $location)
+                                    <option value="{{$location->id}}"
+                                        {{get_edit_select_check_pvr_old_value_with_obj('package_flight_location', $page, 'package_flight_location', $location->id, 'select')}}>
+                                        {{$location->loc_name}}</option>
+                                    {!!
+                                    get_loctions_child_option($location->id) !!}
+                                    @endforeach
+                                </select>
+                                <label class="form-label">Location</label>
+                            </div>
+                            {!! get_form_error_msg($errors, 'package_flight_location') !!}
+                        </div>
+
+
                         <button type="submit"
                             class="btn btn-success btn-primary waves-effect m-t-20 save_form_btn m-r-10 m-l-10">Save
                         </button>
@@ -147,6 +195,21 @@ $page='';
         $('.go_to_next_page_btn').click(function (event) {
             $('#go_to_next_page').val(1);
         });
+    </script>
+
+    <script src="{{ $assets_admin }}/js/pages/forms/editors.js"></script>
+
+    <script src="{{ $assets_admin }}/plugins/momentjs/moment.js"></script>
+
+    <script
+        src="{{ $assets_admin }}/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+    <script type="text/javascript">
+        $('.flight_start_date').bootstrapMaterialDatePicker({
+            format: 'YYYY-MM-DD',
+            clearButton: true,
+            time: false
+        });
+
     </script>
 
     @endsection

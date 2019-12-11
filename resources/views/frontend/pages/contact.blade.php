@@ -50,7 +50,9 @@
                   <div class="xcontact-input-box">
                     <textarea rows="4" class="form-control" name="msg_contact"></textarea>
                   </div>
-                  <div class="clear"></div>
+                  <div class="row">
+                    <div class="col-lg-12 clear"></div>
+                  </div>
                   <div class="form-group row">
                     <div class="col-md-6 offset-md-4">
                       <div class="g-recaptcha" data-sitekey="{{ env('CAPTCHA_SITE_KEY') }}"></div>

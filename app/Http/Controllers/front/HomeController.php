@@ -949,6 +949,18 @@ class HomeController extends Controller
         $data['site_title'] = $page->page_title_text;
         $data['header_custom_code'] = $page->page_header_custom_code;
         $data['footer_custom_code'] = $page->page_footer_custom_code;
+        $packages = [];
+        if ($page->package_start_date) {
+            $start = $page->package_start_date;
+            $end = $page->package_end_date;
+            $loc = $page->package_flight_location;
+            $packages = package::where('package_start_date', '>=', $start)->where('package_end_date', '<=', $end);
+            if ($loc) {
+                $packages = $packages->where('package_flight_location', $loc);
+            }
+            $packages = $packages->get();
+        }
+        $data['packages'] = $packages;
         if ($page->having_right_link != 1) {
             $data['page_class'] = 'col-md-12 bfrgtnav pages_static_rami';
         } else {

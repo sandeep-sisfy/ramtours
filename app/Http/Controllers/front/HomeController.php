@@ -954,7 +954,7 @@ class HomeController extends Controller
             $start = $page->package_start_date;
             $end = $page->package_end_date;
             $loc = $page->package_flight_location;
-            $packages = package::where('package_start_date', '>=', $start)->where('package_end_date', '<=', $end);
+            $packages = package::where('package_status', 1)->where('package_start_date', '>=', $start)->where('package_end_date', '<=', $end);
             if ($loc) {
                 $packages = $packages->where('package_flight_location', $loc);
             }

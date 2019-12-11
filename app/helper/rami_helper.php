@@ -1464,22 +1464,22 @@ if (!function_exists('get_week_name_hebrew')) {
                 return "יום ראשון";
                 break;
             case 1:
-                return "יום ראשון";
+                return "יום שני";
                 break;
             case 2:
-                return "יום ראשון";
+                return "יום שלישי";
                 break;
             case 3:
-                return "יום ראשון";
+                return "יום רביעי";
                 break;
             case 4:
-                return "יום ראשון";
+                return "יום חמישי";
                 break;
             case 5:
-                return "יום ראשון";
+                return "יום שישי";
                 break;
             case 6:
-                return "יום ראשון";
+                return "יום שבת";
                 break;
             default:
                 return "something went wrong";

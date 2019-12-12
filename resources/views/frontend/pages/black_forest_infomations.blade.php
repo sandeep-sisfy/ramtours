@@ -38,7 +38,7 @@
             <div class="home-product-box">
               <div class="pakinner">
                 <div class="home-product-inner-box">
-                  <div class="content-image-heading-english">חבילות נופש ליער השחור סוכות </div>
+                  <div class="content-image-heading-english">חבילות נופש ליער השחור </div>
                   <div class="content-image-heading-border"></div>
                 </div>
               </div>

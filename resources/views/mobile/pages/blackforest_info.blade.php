@@ -22,7 +22,7 @@
             <div class="rt-packframes">
                <div class="accomm-left col-6 col-sm-6">
                   <div class="accomm-heading">
-                     <h5>חבילות נופש ליער השחור קיץ 2019</h5>
+                     <h5>חבילות נופש ליער השחור קיץ </h5>
                   </div>
                </div>
                <div class="accomm-right col-6 col-sm-6">
@@ -33,7 +33,7 @@
             <div class="rt-packframes">
                <div class="accomm-left col-6 col-sm-6">
                   <div class="accomm-heading">
-                     <h5>חבילות נופש ליער השחור סוכות 2019</h5>
+                     <h5>חבילות נופש ליער השחור </h5>
                   </div>
                </div>
                <div class="accomm-right col-6 col-sm-6">

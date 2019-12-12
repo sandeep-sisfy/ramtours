@@ -950,6 +950,7 @@ class HomeController extends Controller
         $data['header_custom_code'] = $page->page_header_custom_code;
         $data['footer_custom_code'] = $page->page_footer_custom_code;
         $packages = [];
+        // EH - adding packages from dates
         if ($page->package_start_date) {
             $start = $page->package_start_date;
             $end = $page->package_end_date;
@@ -958,7 +959,7 @@ class HomeController extends Controller
             if ($loc) {
                 $packages = $packages->where('package_flight_location', $loc);
             }
-            $packages = $packages->get();
+            $packages = $packages->orderBy('package_lowest_price')->get();
         }
         $data['packages'] = $packages;
         if ($page->having_right_link != 1) {

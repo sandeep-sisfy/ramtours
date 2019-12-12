@@ -38,12 +38,12 @@
             <div class="home-product-box">
               <div class="pakinner">
                 <div class="home-product-inner-box">
-                  <div class="content-image-heading-english">חבילות נופש ליער השחור סוכות 2020</div>
+                  <div class="content-image-heading-english">חבילות נופש ליער השחור סוכות </div>
                   <div class="content-image-heading-border"></div>
                 </div>
               </div>
               <div class="content-image clearfix">
-                <a href="{{ url('/חבילות-נופש-ליער-השחור-ראש-השנה-סוכות') }}"><img width="340" height="214"
+                <a href="{{ url('/package-category/21') }}"><img width="340" height="214"
                     src="{{url('/assets/front/images')}}/bfinfo-2.jpg" class="img-fluid" alt=""></a>
               </div>
             </div>

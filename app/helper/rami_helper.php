@@ -771,6 +771,15 @@ if (!function_exists('rami_vacation_pkg_mobile_html')) {
     }
 
 }
+
+if (!function_exists('rami_get_first_package_for_flight')) {
+    function rami_get_first_package_for_flight($flight_id)
+    {
+        $p = package::where('package_status', 1)->where('package_flight_sche', 'like', "%i:$flight_id%")->first();
+        return $p ? $p->package_profit_fhc : "";
+    }
+}
+
 if (!function_exists('rami_fly_drive_pkg_mobile_html')) {
     function rami_fly_drive_pkg_mobile_html($pkgs_fhc)
     {

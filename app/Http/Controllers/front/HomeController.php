@@ -1033,6 +1033,20 @@ class HomeController extends Controller
 		</noscript>';
         return view('frontend.pages.black_forest_infomations', $data);
     }
+
+    public function flightsProfit()
+    {
+        $fnum = Request()->get('fnum');
+        if ($fnum) {
+            $flights = flight_schedule::where('flight_sche_title', 'like', "%$fnum%")->orderBy('up_departure_time')->paginate();
+        } else {
+            $flights = flight_schedule::orderBy('up_departure_time')->paginate();
+        }
+
+        $data['flights'] = $flights;
+        return view('frontend.pages.profits', $data);
+    }
+
     // function about() {
     //     $data['title'] = 'about';
     //     return view('frontend.pages.about_us',$data);

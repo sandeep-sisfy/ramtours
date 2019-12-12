@@ -4,7 +4,7 @@
             <strong>'שם פרטי : '</strong>{{$first_name}}<br>
             <strong>'שם משפחה : '</strong>{{$last_name}}<br>
             <strong>'דוא"ל : '</strong>{{$email}}<br>
-            <strong>'מכשיר טלפון : '</strong>{{$phone}}<br>
+            <strong>' טלפון : '</strong>{{$phone}}<br>
             @if(!empty($interested_in))
             <strong>' מתעניין ב : '</strong>{{$interested_in}}<br>
             @endif

@@ -1037,14 +1037,33 @@ class HomeController extends Controller
 
     public function flightsProfit()
     {
+
+        $locations = [
+            44,
+            45,
+            64,
+            69,
+            71,
+            81,
+        ];
+
+        $locations = Location::whereIn('id', $locations)->select('id', 'loc_name')->get();
         $fnum = Request()->get('fnum');
+        $loc = Request()->get('loc');
+        $flights = flight_schedule::orderBy('up_departure_time');
         if ($fnum) {
-            $flights = flight_schedule::where('flight_sche_title', 'like', "%$fnum%")->orderBy('up_departure_time')->paginate();
-        } else {
-            $flights = flight_schedule::orderBy('up_departure_time')->paginate();
+            $flights = $flights->where('flight_sche_title', 'like', "%$fnum%");
+        }
+        if ($loc) {
+            $flts = flight::where('flight_source', $loc)->whereOr('flight_desti', $loc)->select('id')->get();
+
+            $flights = $flights->whereIn('flight_down', $flts);
         }
 
+        $flights = $flights->paginate();
+
         $data['flights'] = $flights;
+        $data['locations'] = $locations;
         return view('frontend.pages.profits', $data);
     }
 

@@ -212,7 +212,7 @@ if (rami_checking_is_mobile() == 1) {
 } else {
     //home route//main site
     Route::get('/', 'front\HomeController@index');
-    Route::get('/flightsProfit', 'front\HomeController@flightsProfit');
+    Route::get('/flightsProfit', 'front\HomeController@flightsProfit')->name('flight_profit');
     Route::get('/package/{id}', 'front\HomeController@package');
     Route::get('/package-category/{id}', 'front\HomeController@loc_vacation_packages');
     Route::get('/search-vacation-packages', 'front\HomeController@search_vacation_packages');

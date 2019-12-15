@@ -1,20 +1,28 @@
 @extends('frontend.front_part.head')
 
-<br>
-<br>
-<form>
-    @csrf
-    <div class="col-auto">
-        <div class="input-group col-lg-2">
+<body>
+    <br>
+    <br>
+    <div class="container-fluid">
+        <form>
+            @csrf
+            <div class="row">
+                <div class="input-group col-lg-2">
+                    <input type="text" style="text-transform: lowercase" class="pull-right form-control" name="fnum"
+                        placeholder="חפוש טיסה">
+                </div>
 
-            <input type="text" style="text-transform: lowercase" class="form-control" name="fnum"
-                placeholder="חפוש טיסה">
-        </div>
+                <div class="input-group col-lg-8">
+                    @foreach ($locations as $loc)
+                    <button class="btn btn-link pull-right"><a
+                            href="{{route('flight_profit', ['loc' => $loc->id]) }}">{{$loc->loc_name}}</a></button>
+                    @endforeach
+                </div>
+            </div>
+
+        </form>
     </div>
 
-</form>
-
-<body>
     <table class=" table">
         <thead>
             <tr>

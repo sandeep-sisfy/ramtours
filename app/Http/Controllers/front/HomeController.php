@@ -1042,7 +1042,6 @@ class HomeController extends Controller
             44,
             45,
             64,
-            69,
             71,
             81,
         ];

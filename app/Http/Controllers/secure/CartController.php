@@ -66,7 +66,7 @@ class CartController extends Controller
         // }
         if ($card == 1) {
             $pack_card = [];
-            $card_total_price = get_rami_price_conversion_to_shekel(252, 2);
+            $card_total_price = get_rami_price_conversion_to_shekel(265, 2);
         } else {
             $pack_card = [];
             $card_total_price = 0;

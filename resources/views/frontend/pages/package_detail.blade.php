@@ -204,7 +204,7 @@
                 <div id="bf_card_cont" class="custom-control custom-checkbox">
                   <input id="bf_card" class="custom-control-input" type="checkbox">
                   <label class="custom-control-label" for="bf_card">
-                    אבקש להוסיף לחבילה כרטיס היער השחור משפחתי בעלות של 252 יורו למשפחה.
+                    אבקש להוסיף לחבילה כרטיס היער השחור משפחתי בעלות של 265 יורו למשפחה.
                   </label>
                 </div>
                 <p class="rt_balinfo">תוספת למבוגר מעל גיל 16 היא 30 יורו ללילה.</p>

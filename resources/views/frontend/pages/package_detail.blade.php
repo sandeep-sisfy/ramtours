@@ -116,17 +116,21 @@
                  <button class="btn btn-default rami_incr_btn" type="button"><i class="fa fa-plus" aria-hidden="true"></i></button>
                 <button class="btn btn-default rami_decr_btn" type="button"><i class="fa fa-minus" aria-hidden="true"></i></button>
               </div>-->
+
+                @php
+                $idx = rami_get_least_package($package->total_persons_combinations)
+                @endphp
                 <select id="rami_pakage_childs">
-                  <option value="0">0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
+                  <option value="0" {{$idx==0 ? "selected" : ""}}>0</option>
+                  <option value="1" {{$idx==1 ? "selected" : ""}}>1</option>
+                  <option value="2" {{$idx==2 ? "selected" : ""}}>2</option>
+                  <option value="3" {{$idx==3 ? "selected" : ""}}>3</option>
+                  <option value="4" {{$idx==4 ? "selected" : ""}}>4</option>
+                  <option value="5" {{$idx==5 ? "selected" : ""}}>5</option>
+                  <option value="6" {{$idx==6 ? "selected" : ""}}>6</option>
+                  <option value="7" {{$idx==7 ? "selected" : ""}}>7</option>
+                  <option value="8" {{$idx==8 ? "selected" : ""}}>8</option>
+                  <option value="9" {{$idx==9 ? "selected" : ""}}>9</option>
                   <option value="10">10</option>
                 </select>
                 <i class="fa fa-angle-down" aria-hidden="true"></i>

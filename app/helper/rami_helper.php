@@ -52,7 +52,7 @@ if (!function_exists('rami_checking_is_mobile')) {
         if ($agent->isMobile() || $agent->isTablet()) {
             return 1;
         } else {
-            return 0;
+            return 1;
         }
     }
 }
@@ -374,6 +374,19 @@ if (!function_exists('rami_file_uploading')) {
         $extension = $file->extension();
         $file_name = $id . '_' . $type . '_' . strtotime(date('d-m-Y H:i:s')) . rand(01, 100) . '.' . $extension;
         return Storage::putFileAs($dir, new File($file), $file_name);
+    }
+}
+
+if (!function_exists('rami_get_least_package')) {
+    function rami_get_least_package($combination)
+    {
+        $idx = -1;
+        $a = explode("&", $combination);
+        if (isset($a[1])) {
+            $b = explode("-", $a[1]);
+            $idx = $b[0] - $b[1];
+        }
+        return $idx;
     }
 }
 

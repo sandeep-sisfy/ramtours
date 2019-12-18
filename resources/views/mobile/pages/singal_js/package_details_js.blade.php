@@ -9,6 +9,12 @@
     setup_cart();
   });
 
+  $(document).ready(function($) {
+    setup_cart();
+  });
+
+
+
   $('.rami_cart_select_div').on('change', 'select', function(event) {
     event.preventDefault();
     setup_cart();
@@ -85,7 +91,12 @@
   })
   .done(function(res) {
     if(res.status=='success'){
-        var price= '<span>מחיר סופי </span>€'+res.total_euro;
+	              totTxt = "מחיר ל " + rami_pakage_adults + " מבוגרים";
+            if (rami_pakage_childs > 0) {
+                    totTxt = totTxt + " ו-" + rami_pakage_childs + " ילדים";
+            }
+
+        var price= '<span>' + totTxt + '</span>€'+res.total_euro;
         $('.pkgprc').empty();
         $('.pkgprc').html(price);
         if(res.error_room.length >0){

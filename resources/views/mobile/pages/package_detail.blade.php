@@ -453,7 +453,7 @@
             <div class="pkg-btns"><button class="btn btn-lg btn-primary btn-block checking_cart" type="submit">המשיכו
                   להזמנה
                </button></div>
-            <div class="pkgprc"><span>מחיר סופי</span>€{{$package->package_lowest_price}} </div>
+            <div class="pkgprc"><span id="pkg-last-price">מחיר סופי</span>€{{$package->package_lowest_price}} </div>
          </div>
          <div class="pkg-frm">
             <div class="pkggs pkg_adults">
@@ -469,13 +469,16 @@
                   </div>
                </div>
             </div>
+            @php
+            $idx = rami_get_least_package($package->total_persons_combinations)
+            @endphp
             <div class="pkggs pkg_kids">
                <label>ילד (2-16) </label>
                <div class="pkg-select">
                   <div class="aprt-inner2">
                      <select id="rami_pakage_childs">
-                        @for($i=0; $i<=10; $i++) <option value="{{$i}}" @if($i==get_search_child()) Selected="true"
-                           @endif>{{ $i }}</option>
+                        @for($i=0; $i<=10; $i++) <option value="{{$i}}" @if ($i==$idx) Selected="true" @endif
+                           @if($i==get_search_child()) Selected="true" @endif>{{ $i }}</option>
                            @endfor
                      </select>
                      <i class="fa fa-angle-down" aria-hidden="true"></i>

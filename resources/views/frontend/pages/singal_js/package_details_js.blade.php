@@ -59,6 +59,8 @@
   var rami_pakage_adults=parseInt($('#rami_pakage_adults').val());
   var rami_pakage_childs=parseInt($('#rami_pakage_childs').val());
   var rami_pakage_infants=parseInt($('#rami_pakage_infants').val());
+
+
   if($('#bf_card').prop("checked") == true){
       var card=1;
   }
@@ -92,7 +94,13 @@
   })
   .done(function(res) {
     if(res.status=='success'){
-        var price= '<span>מחיר סופי </span>€'+res.total_euro;
+	    totTxt = "מחיר ל " + rami_pakage_adults + " מבוגרים";
+	    if (rami_pakage_childs > 0) {
+		    totTxt = totTxt + " ו-" + rami_pakage_childs + " ילדים";
+	    }
+
+        var price= '<span>' + totTxt + '</span>€'+res.total_euro;
+
         $('.pkgprc').empty();
         $('.pkgprc').html(price);
         if(res.error_room.length >0){

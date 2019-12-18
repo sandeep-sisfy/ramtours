@@ -546,7 +546,8 @@
                      @if(empty($car['id']))
                      @continue
                      @endif
-                     <option value="{{$car['id']}}" @if ($idx==0) selected @endif>{{$car['car_title']}}</option>
+                     <option value="{{$car['id']}}" @if($car['id']==$package->cheapest_car) selected="true" @endif
+                        >{{$car['car_title']}}</option>
                      @php
                      $idx++;
                      @endphp

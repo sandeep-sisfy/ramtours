@@ -504,7 +504,7 @@
                   <select>
                      <option value="0">אנא בחר טיסה</option>
                      @foreach($all_flights as $all_flight)
-                     <option value="{{$all_flight['id']}}">{{$all_flight['title']}}</option>
+                     <option value="{{$all_flight['id']}}" selected>{{$all_flight['title']}} </option>
                      @endforeach
                   </select>
                </div>
@@ -539,11 +539,17 @@
                <div class="aprt-inner">
                   <select class="rami_pkg_chnage_select chnage_select1" element_no='1' element_name="car">
                      <option>אנא בחר מכונית</option>
+                     @php
+                     $idx = 0
+                     @endphp
                      @foreach( $all_cars as $car)
                      @if(empty($car['id']))
                      @continue
                      @endif
-                     <option value="{{$car['id']}}">{{$car['car_title']}}</option>
+                     <option value="{{$car['id']}}" @if ($idx==0) selected @endif>{{$car['car_title']}}</option>
+                     @php
+                     $idx++;
+                     @endphp
                      @endforeach
                   </select>
                   <a href="javascript:void(0);" class="add_button" title="Add More room"><i class="fa fa-plus"

@@ -9,11 +9,6 @@
     setup_cart();
   });
 
-  $(document).ready(function($) {
-    setup_cart();
-  });
-
-
 
   $('.rami_cart_select_div').on('change', 'select', function(event) {
     event.preventDefault();
@@ -22,6 +17,11 @@
   $('#bf_card_cont').on('click', '#bf_card', function(event) {
     setup_cart();
   });
+
+  $(document).ready(function($) {
+    setup_cart();
+  });
+
 
   function rami_getting_package_rooms(){
    var rooms=$('.rami_package_room').find('select').length;

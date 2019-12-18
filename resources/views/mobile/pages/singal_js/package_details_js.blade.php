@@ -91,7 +91,7 @@
   })
   .done(function(res) {
     if(res.status=='success'){
-	              totTxt = "מחיר ל " + rami_pakage_adults + " מבוגרים";
+	              totTxt = "המחיר המוצע הינו בהרכב של  " + rami_pakage_adults + " מבוגרים";
             if (rami_pakage_childs > 0) {
                     totTxt = totTxt + " ו-" + rami_pakage_childs + " ילדים";
             }

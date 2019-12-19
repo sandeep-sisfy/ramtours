@@ -35,7 +35,6 @@ class HomeController extends Controller
     }
     public function index()
     {
-        die();
 	$data['fhcs'] = get_location_fhc();
         $data['fcs'] = get_location_fc();
         $data['flights_src'] = get_location_flight_src();
